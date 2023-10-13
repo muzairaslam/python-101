@@ -1,0 +1,59 @@
+---
+title: "Introduction to Python"
+subtitle: Week 1
+format: revealjs
+---
+
+## Introduction
+
+- My name is Uzair Aslam
+- Founder @ [Stat Devs](https://statdevs.com/), a Data Analytics Company.
+- Currently Data Scientist @ Stat Devs.
+- Consulted @ Cube Statistica as Junior Data Scientist.
+- Worked as Data Analyst for Indus Hospital & Health Networks.
+- BSc Economics & Math, IBA (2022)
+- Find me on [Linked In](https://www.linkedin.com/in/uzairdatascientist/) 
+- Find me on [Github](https://github.com/muzairaslam)
+
+
+## Why should we study Python Now ?
+
+![](why-python.jpg){width=800}
+
+
+## Because it's most in Demand!
+
+![](python-popular.jpg)
+
+
+## Python is used in ...
+![](python-apps.png)
+
+
+## Who is using Python Now ?
+
+![](companies-using-python.jpeg)
+
+## How many of you have used Python before ?
+
+- Never Used 
+- Used recently
+- Daily Use
+
+## What are we going to learn in this course ?
+
+- Python Fundementals (variables, data types, loops, functions)
+- Basic Data Structures (lists, dictionaries, tuples)
+- Loading And Reading Data 
+- Data Visualization
+- Data Science in Python
+- Much More...
+- Book for Reference: 
+
+## Python & VS Code Installation
+
+[Python Download Link](https://www.python.org/downloads/)
+
+[VS Code Installation](https://code.visualstudio.com/download)
+
+
