@@ -48,12 +48,15 @@ format: revealjs
 - Data Visualization
 - Data Science in Python
 - Much More...
-- Book for Reference: 
+- Book for Reference: [A Smarter Way to Learn Python (Mark Myers)](https://digtvbg.com/files/books-for-hacking/A%20Smarter%20Way%20to%20Learn%20Python%20-%20Learn%20it%20faster.%20Remember%20it%20longer.%20by%20Mark%20Myers.pdf)
 
 ## Python & VS Code Installation
 
 [Python Download Link](https://www.python.org/downloads/)
 
 [VS Code Installation](https://code.visualstudio.com/download)
+
+
+And [Github Profile](https://github.com/) is must for all Students.
 
 
