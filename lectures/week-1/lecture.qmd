@@ -6,6 +6,8 @@ format: revealjs
 
 ## Introduction
 
+::: {.incremental}
+
 - My name is Uzair Aslam
 - Founder @ [Stat Devs](https://statdevs.com/), a Data Analytics Company.
 - Currently Data Scientist @ Stat Devs.
@@ -15,6 +17,7 @@ format: revealjs
 - Find me on [Linked In](https://www.linkedin.com/in/uzairdatascientist/) 
 - Find me on [Github](https://github.com/muzairaslam)
 
+:::
 
 ## Why should we study Python Now ?
 
@@ -36,11 +39,18 @@ format: revealjs
 
 ## How many of you have used Python before ?
 
-- Never Used 
-- Used recently
-- Daily Use
+::: {.incremental}
+
+- Never used before 
+- Used once or twice
+- Studied at University
+- Daily use
+
+:::
 
 ## What are we going to learn in this course ?
+
+::: {.incremental}
 
 - Python Fundementals (variables, data types, loops, functions)
 - Basic Data Structures (lists, dictionaries, tuples)
@@ -49,6 +59,8 @@ format: revealjs
 - Data Science in Python
 - Much More...
 - Book for Reference: [A Smarter Way to Learn Python (Mark Myers)](https://digtvbg.com/files/books-for-hacking/A%20Smarter%20Way%20to%20Learn%20Python%20-%20Learn%20it%20faster.%20Remember%20it%20longer.%20by%20Mark%20Myers.pdf)
+
+:::
 
 ## Python & VS Code Installation
 
@@ -60,3 +72,41 @@ format: revealjs
 And [Github Profile](https://github.com/) is must for all Students.
 
 
+## Python Language
+
+::: {.incremental}
+
+- Python is a popular, 30-year-old general purpose programming language.
+
+- Created by Guido van Rossum. 
+
+- Compared with some other languages, it's easy to learn, and it's relatively easy to read. 
+
+- Python is often used to teach beginners the fundamentals of programming.
+
+:::
+
+## Our First Lesson : print
+
+
+- `print()` tells the program to display words or numbers on the screen.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+print("Hello World")
+```
+
+- print is a keyword that has special meaning for Python. 
+
+- It means, "Display what’s inside the parentheses."
+
+- —"Hello, World!"—is called a text string or simply a string
+
+## Let's get Hands On!
+
+
+- Complete the Excercise 1 from the book. 
+
+- https://www.asmarterwaytolearn.com/python/1.html
