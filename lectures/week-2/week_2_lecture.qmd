@@ -1,0 +1,282 @@
+---
+title: "Introduction to Python"
+subtitle: Week 1
+format: revealjs
+---
+
+## Last Week (Recap)
+
+::: {.incremental}
+
+- `print()` tells the program to display words or numbers on the screen.
+- Defined three data types in Python: `int`, `string`, `float`
+- Assigned variables to numbers
+- Assigned variables to strings
+- Math Expressions in Python
+:::
+
+## Last Week (Recap)
+
+::: {.incremental}
+
+- We can assigned variable to numbers
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+weight = 150
+print(weight)
+
+```
+
+- And to Strings
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+name = "Uzair"
+print(name)
+
+```
+
+:::
+
+## Last Week (Recap)
+
+Familiar operators in math expressions are 
+
+- `+` (add), `-` (subtract) , `*` (multiply) , `/` (divide).
+- Quick quiz! 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+number = 4
+popular_number_add = number + 4
+popular_number_sub = number - 4
+popular_number_mult = number * 4
+popular_number_divide = number / 4
+print(popular_number_add)
+print(popular_number_sub)
+print(popular_number_mult)
+print(popular_number_divide)
+```
+
+## This week
+
+- Floor division
+- Modulus Operator
+- Order of precedence
+- Boolean expressions, logical operators
+
+
+
+## Floor Division
+
+:::{.incremental}
+
+- In Python, we use `//` as floor division
+
+- This is also known as integer division
+
+- This operator will divide the first argument by the second argument.
+
+- Then  **round** the result down to the nearest whole number
+
+- It is equivalent to the `math.floor()` function.
+
+:::
+
+## Example 1
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# Floor Divide
+print(15 // 4)
+```
+
+## Example 2
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+import math
+
+math.floor(3.75)
+```
+
+
+## Modulo Operator
+
+:::{.incremental}
+
+- `%` is the modulo operator
+
+- It divides one number by another number, but doesn't give you the result of the division.
+
+- It gives you the remainder after the first number is divided by the second number.
+
+- What is the remainder when you divide 10 by 3 ?
+
+:::
+
+## Example 
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+whats_left = 10 % 3
+print(whats_left)
+```
+
+## Some unfamiliar operators
+
+- Suppose you want to increase the value of a variable by 1. You could write
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+age = 54
+age = age + 1
+print(age)
+```
+
+- The statement increases the value of the variable `age` by 1.
+- If the variable started off with a value of 54, it now has a value of 55.
+
+## Shorthand way…
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+age = 54
+age += 1
+print(age)
+```
+
+You can use the same kind of shorthand for other operators too.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+age = 54
+age *= 2
+print(age)
+```
+
+## Don't forget to soft code
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+age = 12
+amount_to_increment = 3
+age += amount_to_increment
+
+print(age)
+```
+
+## Let's get hands on !
+
+<http://www.asmarterwaytolearn.com/python/6.html>
+
+## Order of Precedence
+
+Precedence Rules in Python are:
+
+1. Parentheses First
+2. Division
+3. Multipication'
+4. Addition
+5. Subtraction
+
+
+## What's the difference ? 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+total_cost = 1 + (3 * 4)
+print(total_cost)
+```
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+total_cost = (1 + 3) * 4
+print(total_cost)
+```
+
+
+## Another example
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+result_of_computation = ((2 * 4) * 4) + 2
+print(result_of_computation)
+```
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+result_of_computation = (2 * 4) * (4 + 2)
+print(result_of_computation)
+```
+
+
+## Boolean Expressions
+
+:::{.incremental}
+
+- `True` and `False` are known as Boolean.
+
+- A Boolean expression is an expression that evaluates to produce a result which is a Boolean value. 
+
+- For example, the operator `==` tests if two values are equal. 
+
+- It produces (or yields) a Boolean value
+
+:::
+
+## Examples
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+print(5 == (3 + 2)) 
+print(5 == 6)
+print(5 != 6)
+print(5 > 6)
+print (6 < 5)
+print(5 >= 5 )
+print (5 <= 5 )
+
+```
+
+
+
+## Let's get hands on! 
+
+<http://www.asmarterwaytolearn.com/python/7.html>
+<http://www.asmarterwaytolearn.com/python/10.html>
