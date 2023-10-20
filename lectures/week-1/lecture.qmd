@@ -110,3 +110,127 @@ print("Hello World")
 - Complete the Excercise 1 from the book. 
 
 - https://www.asmarterwaytolearn.com/python/1.html
+
+
+## Variables for Strings
+
+- When we want to create variables in Python we store them in an object.
+
+- I want to create variable of my name : "Uzair"
+
+- Then I would `print()` it.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+name = "Uzair"
+print(name)
+```
+
+- Always give your variables meaningful names.
+
+## Rules for defining variables
+
+- Each statement is on a separate line
+
+- Variable names can't have spaces in them.
+
+- `country of origin` is not a legal variable name.
+
+- `country_of_origin` is a legal variable name
+
+
+## Variables for Numbers
+
+- Similar to string, we can assign variable to numbers
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+weight = 150
+print(weight)
+
+```
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+weight + 25
+
+```
+
+
+## String cannot be added to Number
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+original_num = "23"
+# new_num = original_num + 7
+
+# The above line will give error.
+
+```
+
+## Math Expressions
+
+Familiar operators in math expressions are + (add), - (subtract), * (multiply), and / (divide).
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# addition
+
+number = 4
+popular_number = number + 4
+print(popular_number)
+```
+
+## Subtraction
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# subtraction
+
+number = 4
+popular_number = number - 4
+print(popular_number)
+```
+
+## Multiply
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# multiply
+
+number = 4
+popular_number = number * 4
+print(popular_number)
+```
+
+## Divide
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# divide
+
+number = 4
+popular_number = number / 4
+print(type(popular_number))
+print(type(number))
+print(type("Uzair"))
+
+```
+

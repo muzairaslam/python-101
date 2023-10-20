@@ -491,9 +491,138 @@
 <section id="lets-get-hands-on" class="slide level2">
 <h2>Let’s get Hands On!</h2>
 <ul>
-<li><p>Complete the Excercise 1.</p></li>
+<li><p>Complete the Excercise 1 from the book.</p></li>
 <li><p>https://www.asmarterwaytolearn.com/python/1.html</p></li>
 </ul>
+</section>
+<section id="variables-for-strings" class="slide level2">
+<h2>Variables for Strings</h2>
+<ul>
+<li><p>When we want to create variables in Python we store them in an object.</p></li>
+<li><p>I want to create variable of my name : “Uzair”</p></li>
+<li><p>Then I would <code>print()</code> it.</p></li>
+</ul>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>name <span class="op">=</span> <span class="st">"Uzair"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">print</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="2">
+<div class="cell-output cell-output-stdout">
+<pre><code>Uzair</code></pre>
+</div>
+</div>
+<ul>
+<li>Always give your variables meaningful names.</li>
+</ul>
+</section>
+<section id="rules-for-defining-variables" class="slide level2">
+<h2>Rules for defining variables</h2>
+<ul>
+<li><p>Each statement is on a separate line</p></li>
+<li><p>Variable names can’t have spaces in them.</p></li>
+<li><p><code>country of origin</code> is not a legal variable name.</p></li>
+<li><p><code>country_of_origin</code> is a legal variable name</p></li>
+</ul>
+</section>
+<section id="variables-for-numbers" class="slide level2">
+<h2>Variables for Numbers</h2>
+<ul>
+<li>Similar to string, we can assign variable to numbers</li>
+</ul>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>weight <span class="op">=</span> <span class="dv">150</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="bu">print</span>(weight)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="3">
+<div class="cell-output cell-output-stdout">
+<pre><code>150</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>weight <span class="op">+</span> <span class="dv">25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="49">
+<pre><code>175</code></pre>
+</div>
+</div>
+</section>
+<section id="string-cannot-be-added-to-number" class="slide level2">
+<h2>String cannot be added to Number</h2>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>original_num <span class="op">=</span> <span class="st">"23"</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co"># new_num = original_num + 7</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># The above line will give error.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="5">
+
+</div>
+</section>
+<section id="math-expressions" class="slide level2">
+<h2>Math Expressions</h2>
+<p>Familiar operators in math expressions are + (add), - (subtract), * (multiply), and / (divide).</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># addition</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a></span>
+<span id="cb10-3"><a href="#cb10-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a>popular_number <span class="op">=</span> number <span class="op">+</span> <span class="dv">4</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="6">
+<div class="cell-output cell-output-stdout">
+<pre><code>8</code></pre>
+</div>
+</div>
+</section>
+<section id="subtraction" class="slide level2">
+<h2>Subtraction</h2>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># subtraction</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a></span>
+<span id="cb12-3"><a href="#cb12-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>popular_number <span class="op">=</span> number <span class="op">-</span> <span class="dv">4</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="7">
+<div class="cell-output cell-output-stdout">
+<pre><code>0</code></pre>
+</div>
+</div>
+</section>
+<section id="multiply" class="slide level2">
+<h2>Multiply</h2>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># multiply</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a></span>
+<span id="cb14-3"><a href="#cb14-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>popular_number <span class="op">=</span> number <span class="op">*</span> <span class="dv">4</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="8">
+<div class="cell-output cell-output-stdout">
+<pre><code>16</code></pre>
+</div>
+</div>
+</section>
+<section id="divide" class="slide level2">
+<h2>Divide</h2>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># divide</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a></span>
+<span id="cb16-3"><a href="#cb16-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb16-4"><a href="#cb16-4"></a>popular_number <span class="op">=</span> number <span class="op">/</span> <span class="dv">4</span></span>
+<span id="cb16-5"><a href="#cb16-5"></a><span class="bu">print</span>(<span class="bu">type</span>(popular_number))</span>
+<span id="cb16-6"><a href="#cb16-6"></a><span class="bu">print</span>(<span class="bu">type</span>(number))</span>
+<span id="cb16-7"><a href="#cb16-7"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="st">"Uzair"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="9">
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'float'&gt;
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</code></pre>
+</div>
+</div>
 <div class="footer footer-default">
 
 </div>
