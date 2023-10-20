@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Python"
-subtitle: Week 1
+subtitle: Week 2
 format: revealjs
 ---
 
