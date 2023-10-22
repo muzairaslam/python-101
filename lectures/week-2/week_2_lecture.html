@@ -450,17 +450,16 @@
 <span id="cb5-3"><a href="#cb5-3"></a>popular_number_sub <span class="op">=</span> number <span class="op">-</span> <span class="dv">4</span></span>
 <span id="cb5-4"><a href="#cb5-4"></a>popular_number_mult <span class="op">=</span> number <span class="op">*</span> <span class="dv">4</span></span>
 <span id="cb5-5"><a href="#cb5-5"></a>popular_number_divide <span class="op">=</span> number <span class="op">/</span> <span class="dv">4</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="bu">print</span>(popular_number_add)</span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="bu">print</span>(popular_number_sub)</span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="bu">print</span>(popular_number_mult)</span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="bu">print</span>(popular_number_divide)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="co"># print(popular_number_add)</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="co"># print(popular_number_sub)</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="co"># print(popular_number_mult)</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="bu">print</span>(popular_number_divide)</span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="bu">print</span>(<span class="bu">type</span>(popular_number_divide))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="3">
 <div class="cell-output cell-output-stdout">
-<pre><code>8
-0
-16
-1.0</code></pre>
+<pre><code>1.0
+&lt;class 'float'&gt;</code></pre>
 </div>
 </div>
 </section>
@@ -505,7 +504,7 @@
 <span id="cb9-3"><a href="#cb9-3"></a>math.floor(<span class="fl">3.75</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="5">
-<div class="cell-output cell-output-display" data-execution_count="20">
+<div class="cell-output cell-output-display" data-execution_count="407">
 <pre><code>3</code></pre>
 </div>
 </div>
@@ -568,12 +567,12 @@
 <p>You can use the same kind of shorthand for other operators too.</p>
 <div class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a>age <span class="op">=</span> <span class="dv">54</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a>age <span class="op">*=</span> <span class="dv">2</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>age <span class="op">/=</span> <span class="dv">2</span></span>
 <span id="cb17-3"><a href="#cb17-3"></a><span class="bu">print</span>(age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="9">
 <div class="cell-output cell-output-stdout">
-<pre><code>108</code></pre>
+<pre><code>27.0</code></pre>
 </div>
 </div>
 </section>
@@ -686,6 +685,113 @@ True</code></pre>
 <section id="lets-get-hands-on-1" class="slide level2">
 <h2>Let’s get hands on!</h2>
 <p><a href="http://www.asmarterwaytolearn.com/python/7.html" class="uri">http://www.asmarterwaytolearn.com/python/7.html</a> <a href="http://www.asmarterwaytolearn.com/python/10.html" class="uri">http://www.asmarterwaytolearn.com/python/10.html</a></p>
+</section>
+<section id="if-elif-else-statements" class="slide level2">
+<h2>If, Elif, Else Statements</h2>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1"></a>buy_score <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a>donut_condition <span class="op">=</span> <span class="st">"not fresh"</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a>donut_price <span class="op">=</span> <span class="st">"low"</span></span>
+<span id="cb31-4"><a href="#cb31-4"></a></span>
+<span id="cb31-5"><a href="#cb31-5"></a><span class="cf">if</span> donut_condition <span class="op">==</span> <span class="st">"fresh"</span>:</span>
+<span id="cb31-6"><a href="#cb31-6"></a>  buy_score <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb31-7"><a href="#cb31-7"></a><span class="cf">elif</span> donut_price <span class="op">==</span> <span class="st">"low"</span>:</span>
+<span id="cb31-8"><a href="#cb31-8"></a>  buy_score <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb31-9"><a href="#cb31-9"></a><span class="cf">else</span>:</span>
+<span id="cb31-10"><a href="#cb31-10"></a>  buy_score <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb31-11"><a href="#cb31-11"></a></span>
+<span id="cb31-12"><a href="#cb31-12"></a><span class="bu">print</span>(buy_score)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="16">
+<div class="cell-output cell-output-stdout">
+<pre><code>5</code></pre>
+</div>
+</div>
+<ul>
+<li><code>==</code> is the comparison operator.</li>
+</ul>
+</section>
+<section id="hands-on-exercise" class="slide level2">
+<h2>Hands on Exercise</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/11.html" class="uri">http://www.asmarterwaytolearn.com/python/11.html</a></p>
+</section>
+<section id="testing-set-of-conditions" class="slide level2">
+<h2>Testing Set of Conditions</h2>
+<ul>
+<li>We have learnt how to test a set of conditions</li>
+<li>Now we will learn how to test a set of conditions</li>
+</ul>
+</section>
+<section id="example-3" class="slide level2">
+<h2>Example</h2>
+<div>
+<ul>
+<li class="fragment">How to write this in Python ?</li>
+</ul>
+<p><em>A guy weighs more than 300 pounds <strong>and</strong> runs 40 yards in under 6 seconds, we will give him a chance to recruit.</em></p>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1"></a><span class="cf">if</span> weight <span class="op">&gt;</span> <span class="dv">300</span> <span class="kw">and</span> time <span class="op">&lt;</span> <span class="dv">6</span>:</span>
+<span id="cb33-2"><a href="#cb33-2"></a>    status <span class="op">=</span> <span class="st">"try to recruit him"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="17">
+
+</div>
+<ul>
+<li class="fragment">How to add a further <strong>or</strong> condition that <em>he should be under 18 ?</em></li>
+</ul>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1"></a><span class="cf">if</span> (weight <span class="op">&gt;</span> <span class="dv">300</span> <span class="kw">and</span> time <span class="op">&lt;</span> <span class="dv">6</span>) <span class="kw">or</span> age <span class="op">&lt;</span> <span class="dv">18</span>:</span>
+<span id="cb34-2"><a href="#cb34-2"></a>    status <span class="op">=</span> <span class="st">"try to recruit him"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="18">
+
+</div>
+</div>
+</section>
+<section id="lets-get-hands-on-2" class="slide level2">
+<h2>Let’s get hands on!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/12.html" class="uri">http://www.asmarterwaytolearn.com/python/12.html</a></p>
+</section>
+<section id="if-statements-nested" class="slide level2">
+<h2>If statements nested</h2>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1"></a><span class="co"># intializations</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a>a <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb35-3"><a href="#cb35-3"></a>b <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb35-4"><a href="#cb35-4"></a>c <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb35-5"><a href="#cb35-5"></a>d <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb35-6"><a href="#cb35-6"></a>e <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb35-7"><a href="#cb35-7"></a>f <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb35-8"><a href="#cb35-8"></a>g <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb35-9"><a href="#cb35-9"></a>h <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb35-10"><a href="#cb35-10"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb35-11"><a href="#cb35-11"></a>y <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb35-12"><a href="#cb35-12"></a></span>
+<span id="cb35-13"><a href="#cb35-13"></a><span class="co"># nested if statements</span></span>
+<span id="cb35-14"><a href="#cb35-14"></a><span class="cf">if</span> c <span class="op">==</span> d:</span>
+<span id="cb35-15"><a href="#cb35-15"></a>    <span class="cf">if</span> x <span class="op">==</span> y:</span>
+<span id="cb35-16"><a href="#cb35-16"></a>        g <span class="op">=</span> h</span>
+<span id="cb35-17"><a href="#cb35-17"></a>    <span class="cf">elif</span> a <span class="op">==</span> b:</span>
+<span id="cb35-18"><a href="#cb35-18"></a>        g <span class="op">=</span> h</span>
+<span id="cb35-19"><a href="#cb35-19"></a>    <span class="cf">else</span>:</span>
+<span id="cb35-20"><a href="#cb35-20"></a>        e <span class="op">=</span> f</span>
+<span id="cb35-21"><a href="#cb35-21"></a><span class="cf">else</span>:</span>
+<span id="cb35-22"><a href="#cb35-22"></a>    x <span class="op">=</span> y</span>
+<span id="cb35-23"><a href="#cb35-23"></a></span>
+<span id="cb35-24"><a href="#cb35-24"></a><span class="bu">print</span>(e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="19">
+<div class="cell-output cell-output-stdout">
+<pre><code>4</code></pre>
+</div>
+</div>
+</section>
+<section id="lets-get-hands-on-3" class="slide level2">
+<h2>Let’s get hands on!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/13.html" class="uri">http://www.asmarterwaytolearn.com/python/13.html</a></p>
+</section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank you!</h1>
 <div class="footer footer-default">
 
 </div>
