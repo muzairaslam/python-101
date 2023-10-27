@@ -4,6 +4,15 @@ subtitle: Week 3
 format: revealjs
 ---
 
+
+## One Announcement
+
+- `Assignment 1` will be uploaded by tomorrow on  Google Classrooms.
+- Due Date of Assignment is 5th November.
+- Weightage of assignment is `10%`
+- Please join the Google Classroom for Python Course.
+
+
 ## Last Week (Recap)
 
 ::: {.incremental}
@@ -18,11 +27,6 @@ format: revealjs
 
 :::
 
-## One Announcement
-
-- Assignment 1 will be uploaded by today on  Google Classrooms.
-- Due Date of Assignment is 5th November.
-- Please join the Google Classroom for Python Course.
 
 ## This Week
 
