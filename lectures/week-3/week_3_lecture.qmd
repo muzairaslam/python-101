@@ -1,0 +1,120 @@
+---
+title: "Introduction to Python"
+subtitle: Week 3
+format: revealjs
+---
+
+## Last Week (Recap)
+
+::: {.incremental}
+
+- Introduced Floor Division in Python `//`
+- Introduced Modulo Operator `%`
+- We covered order of precedence. 
+- We also saw how to test conditions in Python using: 
+`if`, `elif`, `else` and nested conditions.
+- Quick Quiz: What does `%` do in Python ?
+- Quick Quiz: What is the order of precedence in Python ?
+
+:::
+
+## One Announcement
+
+- Assignment 1 will be uploaded by today on  Google Classrooms.
+- Due Date of Assignment is 5th November.
+- Please join the Google Classroom for Python Course.
+
+## This Week
+
+::: {.incremental}
+
+- Commenting in Python
+- Getting Information from User
+- Our First Python Data Structure: **Lists**
+
+:::
+
+## Comments in Python
+
+::: {.incremental}
+
+- **Comments** are lines of text in your code that Python ignores.
+- Comments are for the human, not the machine. For example, a comment can explain a section of code so another programmer can understand it.
+- A comment can help you figure out your code when you come back to it a month
+or a year later.
+- To write comment a line in Python we use: `#` at the beginning of line.
+
+:::
+
+## Example 1 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# This is a comment.
+# This is another comment.
+# Python ignores these comments.
+# The code that Python executes is next, on line
+
+print("Hello, world!")
+```
+
+## Example 2: Multi line Comment
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+'''
+This is a comment.
+This is another comment.
+Python ignores these comments.
+The code that Python executes is next, on line
+'''
+print("Hello World!")
+
+```
+
+
+## Getting information from the user
+
+::: {.incremental}
+
+- Some times we will need to take input from the user in the code.
+- The user will enter the data and our code will run on the input.
+- To get user input in Python we use `input` function.
+
+:::
+
+## Examples
+
+Check `user-input-demo.py` for examples 
+
+## Let's get hands On !
+
+<http://www.asmarterwaytolearn.com/python/14.html>
+<http://www.asmarterwaytolearn.com/python/23.html>
+
+
+## Solve in Jupyter Notebook or .py 
+
+Q. Write a Python code which takes four inputs from user: 
+
+1. Name
+2. Age
+3. Height (m)
+4. Weight (Kg)
+
+Then calculate the BMI of the person. The BMI is calculated as 
+
+$$
+BMI = Weight (Kg) / Height (m)
+$$
+
+**Print the following in Python:**
+
+`Name` has `BMI` with `age` years of age.
+
+
