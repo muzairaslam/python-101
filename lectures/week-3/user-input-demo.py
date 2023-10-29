@@ -18,4 +18,9 @@ print(double_user_age)
 # Check the type of double_user_age
 print(type(double_user_age))
 
+# convert integer data type to string
+str_double_age = str(double_user_age)
+
+# now see the data type 
+print(type(str_double_age))
 
