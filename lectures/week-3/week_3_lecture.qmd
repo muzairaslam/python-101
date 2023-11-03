@@ -7,10 +7,11 @@ format: revealjs
 
 ## One Announcement
 
-- `Assignment 1` will be uploaded by tomorrow on  Google Classrooms.
-- Due Date of Assignment is 5th November.
+- `Assignment 1` has been uploaded on  Google Classrooms.
+- Due Date of Assignment is 8th November.
 - Weightage of assignment is `10%`
 - Please join the Google Classroom for Python Course.
+- Walk through of the assignment.
 
 
 ## Last Week (Recap)

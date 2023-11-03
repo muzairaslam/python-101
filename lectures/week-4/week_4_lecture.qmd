@@ -1,0 +1,213 @@
+---
+title: "Introduction to Python"
+subtitle: Week 4
+format: revealjs
+---
+
+
+## Last Week (Recap)
+
+- Posted `Assignment 1` on  Google Classrooms
+- Due Date of Assignment is 8th November.
+- Weightage of assignment is `10%`
+- If you are facing problems in assignment, please discuss in office hours
+- Office hours are `11 AM-1 PM (Sat, Sun)`
+
+## Last Week (Recap)
+
+::: {.incremental}
+
+- Single Line and Multile Commenting in Python.
+- Taking information from user using `input()`
+- Solved the BMI Problem as Lab Exercise.
+- Introduced Lists
+- Lists Operations : `append()`, `insert()`
+- Lists Slicing
+- Lists Deletion 
+
+:::
+
+
+## Last Week Recap
+
+::: {.incremental}
+
+- `Listname[ Initial : End : IndexJump ]`
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# Initialize list
+Lst = [50, 70, 30, 20, 90, 10, 50]
+ 
+# Slice 1
+print(Lst[::])
+
+# Slice 2
+print(Lst[1:5])
+
+# Slice 3 
+print(Lst[1:5:2])
+
+# Slice 4
+print(Lst[::2])
+```
+
+:::
+
+## Popping Elements
+
+- Popping means to strike an element off a list but hang onto it for another purpose.
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+tasks = ["email Uzair", "call Ali", "meet with Zaid"]
+
+# Pop the element from tasks to task_accomplished list
+
+# Step 1: store the element in a variable
+latest_task_accomplished = tasks.pop(1) 
+print(latest_task_accomplished)
+
+# Step 2: Create an empty list named task_accomplished_
+tasks_accomplished = []
+
+# Step 3: Append the variable to task_accomplished list
+tasks_accomplished.append(latest_task_accomplished)
+print(tasks_accomplished)
+
+```
+
+## Insertion to a known index in the list
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+tasks = ["email Uzair", "call Ali", "meet with Zaid"]
+
+tasks_accomplished = ["call Ali"]
+
+# Pop the second element of the tasks list
+# And insert it to second element of tasks_accomplished list
+
+tasks_accomplished.insert(2, tasks.pop(2))
+
+print(tasks_accomplished)
+```
+
+## Let's get hands on!
+
+::: {.incremental}
+
+- Popping elements: <http://www.asmarterwaytolearn.com/python/19.html>
+:::
+
+
+## for Loops
+
+- Suppose we want to check if a particular city is one of the 5 environmentally cleanest cities in the Karachi.
+
+
+- You've assigned the name of the city in question to the `variable city_to_check`.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+city_to_check = "Karachi"
+```
+
+- And you've assigned the names of the 5 cleanest cities to the **list** `cleanest_cities`
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+cleanest_cities = ["Lahore", "Quetta", "Hyderabad", "Karachi", "Thatta"]
+```
+
+
+## How to check if cleanest_cities has city_to_check ?
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+for a_clean_city in cleanest_cities:
+  if city_to_check == a_clean_city:
+    print("It's one of the cleanest cities")
+    break
+```
+
+
+- Things to notice:
+- Line 1 ends in a colon.
+- Line 2 is indented, because it takes its orders from Line 1.
+- Line 3 has a deeper indent than Line 2, because it takes its orders from Line 2.
+
+## break statement
+
+- In the course of comparing the city in question against the list of clean cities, if Python finds a match, there's no point in continuing the loop.
+
+- So you stop the loop by adding a `break` statement
+
+
+## Let's get hands on!
+
+<http://www.asmarterwaytolearn.com/python/21.html>
+
+
+## Note About range()
+
+- `range()` is a function in Python which returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+
+- Syntax: `range(start, stop, step)`
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+for i in range(10):
+  print(i)
+
+```
+
+
+## for Loops nested
+
+- We can also run nested loops in Python.
+
+
+![](Nestedloop.png)
+
+
+## Example
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+first_names = ["Uzair ", "Ayesha ", "Abdul ", "Ali ", "Abdullah"]
+last_names = ["Aslam", "Imran", "Samad", "Imran"]
+full_names = []
+for a_first_name in first_names:
+  for a_last_name in last_names:
+    full_names.append(a_first_name + " " + a_last_name)
+print(full_names)
+```
+
+
+- The `inner loop` runs a complete cycle of iterations on each iteration of the `outer loop`.
+- The total combinations we get are 4 * 5 = 20
+
+## Let's get hands on!
+
+<http://www.asmarterwaytolearn.com/python/22.html>
+
+# Thank you

@@ -1,0 +1,96 @@
+---
+title: "Assignment 1"
+subtitle: "Deadline 8th Nov, 2023"
+format: pdf
+---
+
+# Instructions
+
+Before begginning the assignment, please make sure you have following tasks completed:
+
+1. Installation of VS Code.
+2. Installation of Python
+3. Making of Github Profile
+4. Watched the video of using Github by [clicking this link.](https://youtu.be/RGOj5yH7evk?si=4shnioStgRYcpaxE) 
+
+
+## Question 1
+
+
+### Task 1
+
+Write a Python program that prompts the user to input values for both the length and breadth of a shape, and then determines whether the shape formed is a square or a rectangle based on the provided dimensions.
+
+**The following is expected in the code:**
+
+"This shape is *[shape name]*"
+
+### Task 2
+
+Also calculate the Perimeter and Area of the Shape.
+
+**The following is expected in the code:**
+
+"The *[shape name]* has Perimeter: *[value]* and Area: *[value]*"
+
+
+## Additional Help
+
+The formulas are as follows:
+
+Rectangle:
+
+Area = Length × Breadth
+Perimeter = 2 × (Length + Breadth)
+
+Square:
+
+Area = Side × Side (where Side refers to both Length and Breadth, since they are equal in a square)
+Perimeter = 4 × Side (or 4 × Length, as both sides are equal in a square)
+
+
+
+## Question 2
+
+## Scenario
+
+The faculty list for Upcode Lab is as follows:
+
+faculty =  ["Uzair", "Ali", "Samad", "Usman", "Saifullah"]
+
+
+### Task 1: Cofounders List
+
+The goal is to create a new list named "Cofounders" and move the names "Usman" and "Saifullah" into it from the "faculty" list. Simultaneously, remove these names from the "faculty" list.
+
+**Instructions:**
+
+1. Create an empty list named "Cofounders".
+2. Identify and move "Usman" and "Saifullah" into the "Cofounders" list.
+3. Ensure removal of "Usman" and "Saifullah" from the "faculty" list.
+
+
+
+**The following is expected in the code:**
+
+Display the "Cofounders" list containing "Usman" and "Saifullah" and the updated "faculty" list without these names.
+
+
+### Task 2: Name Correction
+
+An error has been spotted in the faculty list. "Ali" should be corrected to "Umair."
+
+**Instructions:**
+
+1. Locate the index of "Ali" in the "faculty" list.
+2. Replace "Ali" with "Umair" at that specific index.
+
+**The following is expected in the code:**
+
+Display the corrected "faculty" list after changing "Ali" to "Umair."
+
+
+
+# Submission
+
+After completing the assignment on Github, please make fill the response form on [this link](https://forms.gle/89QSyVQZpdUZsY9K9)
