@@ -1,0 +1,61 @@
+---
+title: "Introduction to Python"
+subtitle: Week 5
+format: revealjs
+---
+
+
+## Last Week (Recap)
+
+-  Popping List Elements
+- `for` loops and `for` loops nested in Python
+- `break` statement in Python
+- `while` loop in Python
+-  Setting Flags in Python
+
+## This Week
+
+- Quiz Answers
+- Problem Solving using Loops
+- Writing Functions 
+
+## Problem 1 using Loops 
+
+- Write a program to print the sum of first 10 numbers in Python.
+
+## Answer 1 using Loops 
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+num  = 10
+sum = 0 
+while num >= 1:
+    sum = sum + num
+    num -= 1 
+print(sum)
+```
+
+## Problem 2 using Loops
+
+- Write a program to print table of a number entered from User.
+
+## Answer 2 using Loops 
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+#i = 1
+#num = int(input("Enter any number : "))
+#while i <= 10:
+#    print(num, "*", i, " = ", num*i)
+#    i += 1
+
+```
+
+
+# Thank you
