@@ -210,4 +210,45 @@ print(full_names)
 
 <http://www.asmarterwaytolearn.com/python/22.html>
 
+## While Loops
+
+- A while loop is used to repeatedly execute the indented block of code as long as the True-False condition following the word 'while' evaluates to True.
+
+-  It is ideal for situations where the total number of iterations necessary cannot be defined beforehand, such as obtaining user input and checking it until correct input is entered.
+
+## Example
+
+- Suppose you want the user to be able to check a city, 
+
+- Then if he/she wants, check another city after that, and then another city after that, etc.
+
+- Please open the While-loop.py file
+
+## Setting Flags
+
+- We can set flags like `True` and `False` in our code.
+- For example see Flagged-While-loop.py
+
+# Explanation
+
+- Line 1 assigns True to the variable that I named keep_looping. 
+
+- True is a special value known as a Boolean.
+
+- Line 2 says, "As long as the variable keep_looping stays True, keep looping."
+
+- The code inside the loop is the same as it was in the last slide.
+
+- Lines 13 and 14 say, "If the user has entered 'q,' change the value of keep_looping to False."
+
+
+## Let's get hands on!
+
+<http://www.asmarterwaytolearn.com/python/51.html>
+<http://www.asmarterwaytolearn.com/python/52.html>
+
+## Problem
+
+
+
 # Thank you
