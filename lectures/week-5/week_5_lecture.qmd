@@ -42,7 +42,7 @@ print(sum)
 
 - Write a program to print table of a number entered from User.
 
-## Answer 2 using Loops 
+## Answer 2 using While Loops 
 
 ```{python}
 
@@ -56,6 +56,129 @@ print(sum)
 #    i += 1
 
 ```
+
+## Answer 2 using For Loops
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# user_input = int(input("Enter any number : "))
+# for i in range(1,11):
+#   table  = i * user_input
+#    print(table)
+```
+
+
+## Problem 3 Using Loops
+
+Write a Python program to get the Fibonacci series between 0 and 50.
+
+Note: The Fibonacci Sequence is the series of numbers : 0, 1, 1, 2, 3, 5, 8, 13, 21, ....
+
+![](fibonaci.png)
+
+## Problem 3 Answer
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+n1 = 0 
+n2 = 1
+i = 0
+while i < 50:
+    print(n1)
+    nth_term = n1 + n2
+    n1 = n2
+    n2 = nth_term
+    i += 1
+```
+
+
+## Functions
+
+*A function is a block of Python code that robotically does the same thing again and again, whenever you invoke its name. It saves you repetitive coding and makes your code easier to understand.*
+
+
+## Example
+
+::: {.incremental}
+
+- This code adds up two numbers.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+first_num = 2
+second_num = 3 
+total = first_num + second_num
+print(total)
+```
+
+- How to convert it into a function? 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def add_numbers(a, b): 
+    total = a + b
+    print(total)
+```
+
+- Then we call the function
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+add_numbers(2,3)
+```
+
+
+:::
+
+## More on Functions
+
+::: {.incremental}
+
+- The definition begins with the keyword `def` (for define)
+
+- Then comes the name. It can be any legal variable name you like
+
+- `a` and `b` are know as arguments in the function
+
+- Then these arguments are used in the function body
+
+- The function name is followed by parentheses
+
+- Our case the function name is add_numbers.
+
+:::
+
+## Let's get Hands On!
+
+<https://www.asmarterwaytolearn.com/python/41.html>
+
+<http://www.asmarterwaytolearn.com/python/42.html>
+
+
+## Problem for Function
+
+Q. Write a Python function named `bmi_calculator` which takes 4 arguments and then calculate BMI.
+
+1. Name
+2. Age
+3. Height (m)
+4. Weight (Kg)
+
+$$
+BMI = Weight (Kg) / Height (m)
+$$
+
+Output : `Name` has `BMI` with `age` years of age.
 
 
 # Thank you

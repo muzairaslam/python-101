@@ -442,8 +442,8 @@
 <li>Write a program to print table of a number entered from User.</li>
 </ul>
 </section>
-<section id="answer-2-using-loops" class="slide level2">
-<h2>Answer 2 using Loops</h2>
+<section id="answer-2-using-while-loops" class="slide level2">
+<h2>Answer 2 using While Loops</h2>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#i = 1</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="co">#num = int(input("Enter any number : "))</span></span>
@@ -454,6 +454,169 @@
 <div class="cell fragment" data-execution_count="2">
 
 </div>
+</section>
+<section id="answer-2-using-for-loops" class="slide level2">
+<h2>Answer 2 using For Loops</h2>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># user_input = int(input("Enter any number : "))</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co"># for i in range(1,11):</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#   table  = i * user_input</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#    print(table)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="3">
+
+</div>
+</section>
+<section id="problem-3-using-loops" class="slide level2">
+<h2>Problem 3 Using Loops</h2>
+<p>Write a Python program to get the Fibonacci series between 0 and 50.</p>
+<p>Note: The Fibonacci Sequence is the series of numbers : 0, 1, 1, 2, 3, 5, 8, 13, 21, ….</p>
+
+<img data-src="fibonaci.png" class="r-stretch"></section>
+<section id="problem-3-answer" class="slide level2">
+<h2>Problem 3 Answer</h2>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>n1 <span class="op">=</span> <span class="dv">0</span> </span>
+<span id="cb5-2"><a href="#cb5-2"></a>n2 <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="dv">50</span>:</span>
+<span id="cb5-5"><a href="#cb5-5"></a>    <span class="bu">print</span>(n1)</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    nth_term <span class="op">=</span> n1 <span class="op">+</span> n2</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    n1 <span class="op">=</span> n2</span>
+<span id="cb5-8"><a href="#cb5-8"></a>    n2 <span class="op">=</span> nth_term</span>
+<span id="cb5-9"><a href="#cb5-9"></a>    i <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="4">
+<div class="cell-output cell-output-stdout">
+<pre><code>0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
+10946
+17711
+28657
+46368
+75025
+121393
+196418
+317811
+514229
+832040
+1346269
+2178309
+3524578
+5702887
+9227465
+14930352
+24157817
+39088169
+63245986
+102334155
+165580141
+267914296
+433494437
+701408733
+1134903170
+1836311903
+2971215073
+4807526976
+7778742049</code></pre>
+</div>
+</div>
+</section>
+<section id="functions" class="slide level2">
+<h2>Functions</h2>
+<p><em>A function is a block of Python code that robotically does the same thing again and again, whenever you invoke its name. It saves you repetitive coding and makes your code easier to understand.</em></p>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<div>
+<ul>
+<li class="fragment">This code adds up two numbers.</li>
+</ul>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>first_num <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>second_num <span class="op">=</span> <span class="dv">3</span> </span>
+<span id="cb7-3"><a href="#cb7-3"></a>total <span class="op">=</span> first_num <span class="op">+</span> second_num</span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="bu">print</span>(total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="5">
+<div class="cell-output cell-output-stdout">
+<pre><code>5</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment">How to convert it into a function?</li>
+</ul>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">def</span> add_numbers(a, b): </span>
+<span id="cb9-2"><a href="#cb9-2"></a>    total <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="bu">print</span>(total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="6">
+
+</div>
+<ul>
+<li class="fragment">Then we call the function</li>
+</ul>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>add_numbers(<span class="dv">2</span>,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="7">
+<div class="cell-output cell-output-stdout">
+<pre><code>5</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="more-on-functions" class="slide level2">
+<h2>More on Functions</h2>
+<div>
+<ul>
+<li class="fragment"><p>The definition begins with the keyword <code>def</code> (for define)</p></li>
+<li class="fragment"><p>Then comes the name. It can be any legal variable name you like</p></li>
+<li class="fragment"><p><code>a</code> and <code>b</code> are know as arguments in the function</p></li>
+<li class="fragment"><p>Then these arguments are used in the function body</p></li>
+<li class="fragment"><p>The function name is followed by parentheses</p></li>
+<li class="fragment"><p>Our case the function name is add_numbers.</p></li>
+</ul>
+</div>
+</section>
+<section id="lets-get-hands-on" class="slide level2">
+<h2>Let’s get Hands On!</h2>
+<p><a href="https://www.asmarterwaytolearn.com/python/41.html" class="uri">https://www.asmarterwaytolearn.com/python/41.html</a></p>
+<p><a href="http://www.asmarterwaytolearn.com/python/42.html" class="uri">http://www.asmarterwaytolearn.com/python/42.html</a></p>
+</section>
+<section id="problem-for-function" class="slide level2">
+<h2>Problem for Function</h2>
+<p>Q. Write a Python function named <code>bmi_calculator</code> which takes 4 arguments and then calculate BMI.</p>
+<ol type="1">
+<li>Name</li>
+<li>Age</li>
+<li>Height (m)</li>
+<li>Weight (Kg)</li>
+</ol>
+<p><span class="math display">\[
+BMI = Weight (Kg) / Height (m)
+\]</span></p>
+<p>Output : <code>Name</code> has <code>BMI</code> with <code>age</code> years of age.</p>
 </section>
 <section id="thank-you" class="title-slide slide level1 center">
 <h1>Thank you</h1>
