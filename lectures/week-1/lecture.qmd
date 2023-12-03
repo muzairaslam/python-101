@@ -228,6 +228,7 @@ print(popular_number)
 
 number = 4
 popular_number = number / 4
+print(popular_number)
 print(type(popular_number))
 print(type(number))
 print(type("Uzair"))

@@ -1,0 +1,274 @@
+---
+title: "Introduction to Python"
+subtitle: Week 6
+format: revealjs
+incremental: true   
+---
+
+
+
+## Some Announcements
+
+- Final Course Project Ideas Submission by 25th November
+- The Project Ideas list will be uploaded on Google Classroom.
+- Students are welcome to present their ideas as well.
+- Assignment 2 will be uploaded by tomorrow. 
+- Deadline will be 1st December 11.59 (PKT).
+
+
+## Last Week (Recap)
+
+- Quiz Answers
+- Problem Solving using Loops
+- Fibonacci Problem
+- Writing Functions 
+- Arguments of Function
+
+
+## This Week
+
+- More About Functions
+- How to pass information to Functions
+- Positional & Keyword Arguments
+- Dealing with unknown number of arguments
+- `Return` statement in the function
+- Storing infromation in variables from function 
+- Problem solving with Functions.
+
+
+
+## What is a Function (Revision)
+
+*A function is a block of Python code that robotically does the same thing again and again, whenever you invoke its name. It saves you repetitive coding and makes your code easier to understand.*
+
+## Parameters Vs Arguments
+
+- A parameter is the variable listed inside the parentheses in the function definition. 
+
+- An argument is the value that are sent to the function when it is called.
+
+Example
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# defining a function where a and b will be numeric parameters
+def sub_numbers(a, b): 
+    sub = a - b
+    print(sub)
+# calling function by giving Arguments
+sub_numbers(10, 6)
+
+```
+
+
+## Positional Arguments
+
+- Each argument is loaded into a corresponding parameter
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# defining a function where a and b will be numeric arguments
+def sub_numbers(a, b): 
+    sub = a - b
+    print(sub)
+```
+
+- Then we pass the arguments to the function according to the argument's postion
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# passing 3 and 2 as arguments of the function
+sub_numbers(3,2)
+
+```
+
+- Here the writer of the function knows that argument `b` will the smaller number and argument `a` is the bigger number so he has to `position` his arguments accordingly.
+
+## Keyword Arguments
+
+- Sometimes we don't want to match the arguments to parameters.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+
+# defining the function
+def say_names_of_couple(husband_name, wife_name):
+    print("The names of the couple are " +
+    husband_name + " and " + wife_name)
+
+# calling the function first time
+say_names_of_couple(husband_name="Bill", wife_name="Zelda")
+
+# calling the function with reverse arguments
+say_names_of_couple(wife_name = "Ayesha", husband_name = "Ali")
+```
+
+## Note
+
+- All that matters is that the name of the `key` in the calling code argument
+`wife_name` is the same as the parameter name in the function's definition — `wife_name`.
+
+## Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/43.html>
+
+## Assigning default value to a parameter
+
+- Suppose the tax rate of Pakistan is fixed at 12 %.
+- I want to write a function which will calculate the tax rate.
+- But I would set the `tax_rate` paramter in function definition as default.
+
+## Example
+
+- Defining And Calling the function for tax calculation.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def calc_tax(sales_total, tax_rate = 0.12):
+    print(sales_total * tax_rate)
+```
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# calling the function by passing one keyword argument
+calc_tax(sales_total = 101.37)
+
+calc_tax(sales_total = 500)
+
+# Sometimes the tax rate may change
+calc_tax(sales_total = 500, tax_rate = 0.18)
+
+
+```
+
+## Note
+
+- `Keyword` parameters without defaults must come before keyword
+parameters with defaults. 
+
+- In the following code, `tax_rate = .12` must come after sales_total
+
+
+## Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/44.html>
+
+
+## args
+
+- `*args` is the short form for Arbitrary Arguments  If the number of arguments to be passed into the function is unknown, add a (*) before the argument name.
+
+- It collects all positional arguments.
+
+```{python}
+#| echo: true
+#| output-location: slide
+# defining function
+def foo(required, *args):
+    print(required)
+    if args:
+        print(args)     
+
+# calling function with requried arguments
+foo("I am required argument")   
+# calling function with required and postional arguments
+foo("I am required argument", 1, 2, 3)
+```
+
+## kwargs
+
+- `kwargs` is the short form of kwy word arguments.
+- Kwargs parameter are collected to all keyword arguments.
+
+
+```{python}
+#| echo: true
+#| output-location: slide
+# defining function
+def foo(required, *args, **kwargs):
+    # print(required)
+    #if args:
+        #print(args)
+    if kwargs:
+        print(kwargs)        
+
+# calling function with required, postional and keyword argument
+foo("I am required argument", 1, 2, 3, 
+key1 = 'value1', key2 = 'value2')
+```
+
+## Notes
+
+- The operator `*` operator will take all positional arguments and pack them all into a single iterable object. 
+
+- The iterable object will be a tuple not a list.
+
+- Tuples and lists are similar in all aspects except that tuples are not mutable. Immutable means its values cannot be edited after assignment.
+
+- The operator `**` operator will take all keyword arguments and pack them all into a dictionary.
+
+## Let's get hands on
+
+<http://www.asmarterwaytolearn.com/python/46.html>
+
+
+## Problem Solving
+
+Write a program to create function func1() to accept a variable length of arguments and print their value.
+
+## Solution
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def func1(*additional_info):
+    for info in additional_info: 
+        print(info)
+
+# call function with 3 arguments
+func1(20, 40, 60)
+
+# call function with 2 arguments
+func1(80, 100)
+```
+
+## Getting information back from functions 
+
+- We use `return` statement to get the information by the functions
+- Take this example
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# defining function
+def calc_tax(sales_total, tax_rate):
+    tax = sales_total * tax_rate
+    return tax
+# calling function and storing the result
+sales_tax = calc_tax(sales_total = 101.37,
+tax_rate=.05)
+# displaying the information
+print(sales_tax)
+```
+
+## Let's get hands on
+
+
+<http://www.asmarterwaytolearn.com/python/47.html>
+<http://www.asmarterwaytolearn.com/python/48.html>
+
+# Thank you

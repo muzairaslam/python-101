@@ -1,0 +1,324 @@
+---
+title: "Introduction to Python"
+subtitle: Week 7
+format: revealjs
+incremental: true  
+---
+
+## Some Announcements
+
+- Final Course Project Ideas Submission by 30th November
+- The Project Ideas list will be uploaded on Google Classroom.
+- Students are welcome to present their ideas as well.
+- Assignment 2 will be uploaded by tomorrow. 
+- Deadline will be 1st December 11.59 (PKT).
+
+
+## Last Week (Recap)
+
+- More About Functions
+- How to pass information to Functions
+- Positional & Keyword Arguments
+- Dealing with unknown number of arguments
+- `Return` statement in the function
+- Storing infromation in variables from function 
+
+## This Week
+
+- Local and Global variables
+- Problem solving with functions.
+- Introduction to dictionaries
+- Adding, deleting infromation in dictionaries
+
+
+## What is a Function (Revision)
+
+*A function is a block of Python code that robotically does the same thing again and again, whenever you invoke its name. It saves you repetitive coding and makes your code easier to understand.*
+
+
+## Problem 1
+
+- Define a function in python that accepts 3 numbers and returns the maximum of three numbers.
+
+- Hint
+- Input:
+
+1. Value of a = 30
+2. Value of b = 22
+3. value of c = 18
+
+- Expected output : 30 is the maximum amongst all
+
+
+## Solution 1
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def max(a, b, c):
+    if a > b and a > c:
+        print(f"{a} is maximum among all")
+    elif b > a and b > c:
+        print(f"{b} is maximum among all")
+    else:
+        print(f"{c} is maximum among all")
+
+max(30,22,18)
+```
+
+- I used f-string as it provides a concise and convenient way to embed python expressions inside string literals and variables for formatting. 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+name = 'Uzair'
+age = 23
+print(f"Hello, My name is {name} and I'm {age} years old.")
+```
+
+## Problem 2
+
+- Define a function that returns Factorial of a number.
+
+- Hint
+- Input:
+- Enter a number = 6
+
+- Expected output: Factorial is 720
+
+- To calculate 4!, we do 4! = 4 x 3 x 2 x 1 = 24 
+
+
+## Solution 2 using while loop
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def factorial(num):
+    fact = 1
+    while (num >= 1):
+        fact *= num 
+        num = num - 1 
+    return fact    
+
+factorial(5)
+```
+
+## Solution 2 using for loop
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def fact(num):
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial = factorial*i
+    return(factorial) 
+
+fact(5)  
+```
+
+## Global Vs Local Variables
+
+- A `global` variable is one you define in the main body of your code—that is,
+not in a function. 
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+what_to_say = "Hi"
+```
+
+- A `local` variable is one that you define in a function.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+def say_something():
+    what_to_say = "Hi"
+```
+
+- What makes a global variable global is that it is recognized everywhere in
+your code. 
+
+
+## More on Scope of variables
+
+
+- Code outside a function can't use variables defined inside the function, but code inside the function can use variables defined in the main code.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# global variable
+a = 2 
+def display_number():
+    # used in the local scope
+    print(a) 
+
+display_number()    
+```
+
+
+## But ..
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+#def display_number():
+    # local variable
+    #b = 4
+
+# used globally
+#print(b)
+
+```
+
+- This is because local variables are not recognised globally.
+
+- Global variables are recognised locally.
+
+## What about this example ?
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+
+# function definition
+def whatever():
+    y = 2
+    print(y)
+y = 1
+# calling function
+whatever()
+print(y)
+```
+
+
+- This is because `y` is two different variables that (confusingly) happen to have the same name.
+
+
+- What happens to the local variable `y` inside the function doesn't affect the global variable `y` outside the function. 
+
+- The global variable retains the value of 1 and local variable retains value 2
+
+## Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/49.html>
+
+
+## Dictionaries
+
+- Suppose you have a customer id = 29876 with following information
+
+- first name: Ahmed
+- last name: Aslam
+- city: Karachi
+- country: Pakistan
+
+
+- We can create a list to store all the information with it
+
+- But lists are good with simple series of things.
+
+- We can use dictionary here.
+
+## How to code it
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876 = {
+    "first name" : "Ahmed",
+    "last name" : "Aslam",
+    "city" : "Karachi",
+    "country": "Pakistan"
+}
+print(customer_29876)
+```
+
+
+- In a list, each chunk is one thing. In a dictionary, each chunk is a paired key and value.
+
+- Here `"first name"` is called as `key` 
+
+- `"Ahmed"` is called as `value`
+
+## Let's get Hands On!
+
+<http://www.asmarterwaytolearn.com/python/25.html>
+<http://www.asmarterwaytolearn.com/python/26.html>
+
+
+## How to pick information out of them
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+fname_of_customer = customer_29876["first name"]
+print(fname_of_customer)
+
+city_of_customer = customer_29876["city"]
+print(city_of_customer)
+```
+
+## Versatility of Keys and Values
+
+
+- `Keys` can be `strings` and `numbers`
+- `Values` can be `strings` and `numbers`
+ 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+rankings = {
+    5: "Finland", 
+    "second": "Norway", 
+    3: "Sweden",
+    "seventh": "Iceland"
+}
+print(rankings)
+```
+
+
+## Adding items 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876["address"] = "Street 26, Khe-e-Ittehad"
+print(customer_29876)
+```
+
+- In the code above we have dictionary name, the key in square brackets, and the values.
+
+- Now our dictionary stores customer's address.
+
+## Let's get Hands On!
+
+
+<http://www.asmarterwaytolearn.com/python/27.html>
+<http://www.asmarterwaytolearn.com/python/28.html>
+<http://www.asmarterwaytolearn.com/python/29.html>
+
+
+
+
+
+

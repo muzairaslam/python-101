@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="lecture_files/libs/clipboard/clipboard.min.js"></script>
-<script src="lecture_files/libs/quarto-html/tabby.min.js"></script>
-<script src="lecture_files/libs/quarto-html/popper.min.js"></script>
-<script src="lecture_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="lecture_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="lecture_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="lecture_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="lecture_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="week-7_files/libs/clipboard/clipboard.min.js"></script>
+<script src="week-7_files/libs/quarto-html/tabby.min.js"></script>
+<script src="week-7_files/libs/quarto-html/popper.min.js"></script>
+<script src="week-7_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="week-7_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="week-7_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="week-7_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="week-7_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.361">
 
   <title>Introduction to Python</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="lecture_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="lecture_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="week-7_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="week-7_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -94,11 +94,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="lecture_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="lecture_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="lecture_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="lecture_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="lecture_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="week-7_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="week-7_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="week-7_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="week-7_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="week-7_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -390,241 +390,326 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Introduction to Python</h1>
-  <p class="subtitle">Week 1</p>
+  <p class="subtitle">Week 7</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<div>
+<section id="some-announcements" class="slide level2">
+<h2>Some Announcements</h2>
 <ul>
-<li class="fragment">My name is Uzair Aslam</li>
-<li class="fragment">Founder @ <a href="https://statdevs.com/">Stat Devs</a>, a Data Analytics Company.</li>
-<li class="fragment">Currently Data Scientist @ Stat Devs.</li>
-<li class="fragment">Consulted @ Cube Statistica as Junior Data Scientist.</li>
-<li class="fragment">Worked as Data Analyst for Indus Hospital &amp; Health Networks.</li>
-<li class="fragment">BSc Economics &amp; Math, IBA (2022)</li>
-<li class="fragment">Find me on <a href="https://www.linkedin.com/in/uzairdatascientist/">Linked In</a></li>
-<li class="fragment">Find me on <a href="https://github.com/muzairaslam">Github</a></li>
+<li class="fragment">Final Course Project Ideas Submission by 30th November</li>
+<li class="fragment">The Project Ideas list will be uploaded on Google Classroom.</li>
+<li class="fragment">Students are welcome to present their ideas as well.</li>
+<li class="fragment">Assignment 2 will be uploaded by tomorrow.</li>
+<li class="fragment">Deadline will be 1st December 11.59 (PKT).</li>
 </ul>
-</div>
 </section>
-<section id="why-should-we-study-python-now" class="slide level2">
-<h2>Why should we study Python Now ?</h2>
-
-<img data-src="why-python.jpg" width="800" class="r-stretch"></section>
-<section id="because-its-most-in-demand" class="slide level2">
-<h2>Because it’s most in Demand!</h2>
-
-<img data-src="python-popular.jpg" class="r-stretch"></section>
-<section id="python-is-used-in" class="slide level2">
-<h2>Python is used in …</h2>
-
-<img data-src="python-apps.png" class="r-stretch"></section>
-<section id="who-is-using-python-now" class="slide level2">
-<h2>Who is using Python Now ?</h2>
-
-<img data-src="companies-using-python.jpeg" class="r-stretch"></section>
-<section id="how-many-of-you-have-used-python-before" class="slide level2">
-<h2>How many of you have used Python before ?</h2>
-<div>
+<section id="last-week-recap" class="slide level2">
+<h2>Last Week (Recap)</h2>
 <ul>
-<li class="fragment">Never used before</li>
-<li class="fragment">Used once or twice</li>
-<li class="fragment">Studied at University</li>
-<li class="fragment">Daily use</li>
+<li class="fragment">More About Functions</li>
+<li class="fragment">How to pass information to Functions</li>
+<li class="fragment">Positional &amp; Keyword Arguments</li>
+<li class="fragment">Dealing with unknown number of arguments</li>
+<li class="fragment"><code>Return</code> statement in the function</li>
+<li class="fragment">Storing infromation in variables from function</li>
 </ul>
-</div>
 </section>
-<section id="what-are-we-going-to-learn-in-this-course" class="slide level2">
-<h2>What are we going to learn in this course ?</h2>
-<div>
+<section id="this-week" class="slide level2">
+<h2>This Week</h2>
 <ul>
-<li class="fragment">Python Fundementals (variables, data types, loops, functions)</li>
-<li class="fragment">Basic Data Structures (lists, dictionaries, tuples)</li>
-<li class="fragment">Loading And Reading Data</li>
-<li class="fragment">Data Visualization</li>
-<li class="fragment">Data Science in Python</li>
-<li class="fragment">Much More…</li>
-<li class="fragment">Book for Reference: <a href="https://digtvbg.com/files/books-for-hacking/A%20Smarter%20Way%20to%20Learn%20Python%20-%20Learn%20it%20faster.%20Remember%20it%20longer.%20by%20Mark%20Myers.pdf">A Smarter Way to Learn Python (Mark Myers)</a></li>
+<li class="fragment">Local and Global variables</li>
+<li class="fragment">Problem solving with functions.</li>
+<li class="fragment">Introduction to dictionaries</li>
+<li class="fragment">Adding, deleting infromation in dictionaries</li>
 </ul>
-</div>
 </section>
-<section id="python-vs-code-installation" class="slide level2">
-<h2>Python &amp; VS Code Installation</h2>
-<p><a href="https://www.python.org/downloads/">Python Download Link</a></p>
-<p><a href="https://code.visualstudio.com/download">VS Code Installation</a></p>
-<p>And <a href="https://github.com/">Github Profile</a> is must for all Students.</p>
+<section id="what-is-a-function-revision" class="slide level2">
+<h2>What is a Function (Revision)</h2>
+<p><em>A function is a block of Python code that robotically does the same thing again and again, whenever you invoke its name. It saves you repetitive coding and makes your code easier to understand.</em></p>
 </section>
-<section id="python-language" class="slide level2">
-<h2>Python Language</h2>
-<div>
+<section id="problem-1" class="slide level2">
+<h2>Problem 1</h2>
 <ul>
-<li class="fragment"><p>Python is a popular, 30-year-old general purpose programming language.</p></li>
-<li class="fragment"><p>Created by Guido van Rossum.</p></li>
-<li class="fragment"><p>Compared with some other languages, it’s easy to learn, and it’s relatively easy to read.</p></li>
-<li class="fragment"><p>Python is often used to teach beginners the fundamentals of programming.</p></li>
+<li class="fragment"><p>Define a function in python that accepts 3 numbers and returns the maximum of three numbers.</p></li>
+<li class="fragment"><p>Hint</p></li>
+<li class="fragment"><p>Input:</p></li>
 </ul>
-</div>
-</section>
-<section id="our-first-lesson-print" class="slide level2">
-<h2>Our First Lesson : print</h2>
+<ol type="1">
+<li class="fragment">Value of a = 30</li>
+<li class="fragment">Value of b = 22</li>
+<li class="fragment">value of c = 18</li>
+</ol>
 <ul>
-<li><code>print()</code> tells the program to display words or numbers on the screen.</li>
+<li class="fragment">Expected output : 30 is the maximum amongst all</li>
 </ul>
+</section>
+<section id="solution-1" class="slide level2">
+<h2>Solution 1</h2>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">def</span> <span class="bu">max</span>(a, b, c):</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="cf">if</span> a <span class="op">&gt;</span> b <span class="kw">and</span> a <span class="op">&gt;</span> c:</span>
+<span id="cb1-3"><a href="#cb1-3"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss"> is maximum among all"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="cf">elif</span> b <span class="op">&gt;</span> a <span class="kw">and</span> b <span class="op">&gt;</span> c:</span>
+<span id="cb1-5"><a href="#cb1-5"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>b<span class="sc">}</span><span class="ss"> is maximum among all"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-7"><a href="#cb1-7"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss"> is maximum among all"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="bu">max</span>(<span class="dv">30</span>,<span class="dv">22</span>,<span class="dv">18</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="1">
 <div class="cell-output cell-output-stdout">
-<pre><code>Hello World</code></pre>
+<pre><code>30 is maximum among all</code></pre>
 </div>
 </div>
 <ul>
-<li><p>print is a keyword that has special meaning for Python.</p></li>
-<li><p>It means, “Display what’s inside the parentheses.”</p></li>
-<li><p>—“Hello, World!”—is called a text string or simply a string</p></li>
-</ul>
-</section>
-<section id="lets-get-hands-on" class="slide level2">
-<h2>Let’s get Hands On!</h2>
-<ul>
-<li><p>Complete the Excercise 1 from the book.</p></li>
-<li><p>https://www.asmarterwaytolearn.com/python/1.html</p></li>
-</ul>
-</section>
-<section id="variables-for-strings" class="slide level2">
-<h2>Variables for Strings</h2>
-<ul>
-<li><p>When we want to create variables in Python we store them in an object.</p></li>
-<li><p>I want to create variable of my name : “Uzair”</p></li>
-<li><p>Then I would <code>print()</code> it.</p></li>
+<li class="fragment">I used f-string as it provides a concise and convenient way to embed python expressions inside string literals and variables for formatting.</li>
 </ul>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>name <span class="op">=</span> <span class="st">"Uzair"</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">print</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>name <span class="op">=</span> <span class="st">'Uzair'</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>age <span class="op">=</span> <span class="dv">23</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="bu">print</span>(<span class="ss">f"Hello, My name is </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> and I'm </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> years old."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="2">
 <div class="cell-output cell-output-stdout">
-<pre><code>Uzair</code></pre>
+<pre><code>Hello, My name is Uzair and I'm 23 years old.</code></pre>
 </div>
 </div>
+</section>
+<section id="problem-2" class="slide level2">
+<h2>Problem 2</h2>
 <ul>
-<li>Always give your variables meaningful names.</li>
+<li class="fragment"><p>Define a function that returns Factorial of a number.</p></li>
+<li class="fragment"><p>Hint</p></li>
+<li class="fragment"><p>Input:</p></li>
+<li class="fragment"><p>Enter a number = 6</p></li>
+<li class="fragment"><p>Expected output: Factorial is 720</p></li>
+<li class="fragment"><p>To calculate 4!, we do 4! = 4 x 3 x 2 x 1 = 24</p></li>
 </ul>
 </section>
-<section id="rules-for-defining-variables" class="slide level2">
-<h2>Rules for defining variables</h2>
-<ul>
-<li><p>Each statement is on a separate line</p></li>
-<li><p>Variable names can’t have spaces in them.</p></li>
-<li><p><code>country of origin</code> is not a legal variable name.</p></li>
-<li><p><code>country_of_origin</code> is a legal variable name</p></li>
-</ul>
-</section>
-<section id="variables-for-numbers" class="slide level2">
-<h2>Variables for Numbers</h2>
-<ul>
-<li>Similar to string, we can assign variable to numbers</li>
-</ul>
+<section id="solution-2-using-while-loop" class="slide level2">
+<h2>Solution 2 using while loop</h2>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>weight <span class="op">=</span> <span class="dv">150</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="bu">print</span>(weight)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">def</span> factorial(num):</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    fact <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>    <span class="cf">while</span> (num <span class="op">&gt;=</span> <span class="dv">1</span>):</span>
+<span id="cb5-4"><a href="#cb5-4"></a>        fact <span class="op">*=</span> num </span>
+<span id="cb5-5"><a href="#cb5-5"></a>        num <span class="op">=</span> num <span class="op">-</span> <span class="dv">1</span> </span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="cf">return</span> fact    </span>
+<span id="cb5-7"><a href="#cb5-7"></a></span>
+<span id="cb5-8"><a href="#cb5-8"></a>factorial(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="3">
-<div class="cell-output cell-output-stdout">
-<pre><code>150</code></pre>
-</div>
-</div>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>weight <span class="op">+</span> <span class="dv">25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell fragment" data-execution_count="4">
-<div class="cell-output cell-output-display" data-execution_count="31">
-<pre><code>175</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>120</code></pre>
 </div>
 </div>
 </section>
-<section id="string-cannot-be-added-to-number" class="slide level2">
-<h2>String cannot be added to Number</h2>
+<section id="solution-2-using-for-loop" class="slide level2">
+<h2>Solution 2 using for loop</h2>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">def</span> fact(num):</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    factorial <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, num <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb7-4"><a href="#cb7-4"></a>        factorial <span class="op">=</span> factorial<span class="op">*</span>i</span>
+<span id="cb7-5"><a href="#cb7-5"></a>    <span class="cf">return</span>(factorial) </span>
+<span id="cb7-6"><a href="#cb7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7"></a>fact(<span class="dv">5</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>120</code></pre>
+</div>
+</div>
+</section>
+<section id="global-vs-local-variables" class="slide level2">
+<h2>Global Vs Local Variables</h2>
+<ul>
+<li class="fragment">A <code>global</code> variable is one you define in the main body of your code—that is, not in a function.</li>
+</ul>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>original_num <span class="op">=</span> <span class="st">"23"</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="co"># new_num = original_num + 7</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># The above line will give error.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>what_to_say <span class="op">=</span> <span class="st">"Hi"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="5">
 
 </div>
-</section>
-<section id="math-expressions" class="slide level2">
-<h2>Math Expressions</h2>
-<p>Familiar operators in math expressions are + (add), - (subtract), * (multiply), and / (divide).</p>
+<ul>
+<li class="fragment">A <code>local</code> variable is one that you define in a function.</li>
+</ul>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># addition</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a></span>
-<span id="cb10-3"><a href="#cb10-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a>popular_number <span class="op">=</span> number <span class="op">+</span> <span class="dv">4</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">def</span> say_something():</span>
+<span id="cb10-2"><a href="#cb10-2"></a>    what_to_say <span class="op">=</span> <span class="st">"Hi"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="6">
-<div class="cell-output cell-output-stdout">
-<pre><code>8</code></pre>
+
 </div>
-</div>
+<ul>
+<li class="fragment">What makes a global variable global is that it is recognized everywhere in your code.</li>
+</ul>
 </section>
-<section id="subtraction" class="slide level2">
-<h2>Subtraction</h2>
+<section id="more-on-scope-of-variables" class="slide level2">
+<h2>More on Scope of variables</h2>
+<ul>
+<li class="fragment">Code outside a function can’t use variables defined inside the function, but code inside the function can use variables defined in the main code.</li>
+</ul>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># subtraction</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a></span>
-<span id="cb12-3"><a href="#cb12-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a>popular_number <span class="op">=</span> number <span class="op">-</span> <span class="dv">4</span></span>
-<span id="cb12-5"><a href="#cb12-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># global variable</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a>a <span class="op">=</span> <span class="dv">2</span> </span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="kw">def</span> display_number():</span>
+<span id="cb11-4"><a href="#cb11-4"></a>    <span class="co"># used in the local scope</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a>    <span class="bu">print</span>(a) </span>
+<span id="cb11-6"><a href="#cb11-6"></a></span>
+<span id="cb11-7"><a href="#cb11-7"></a>display_number()    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="7">
 <div class="cell-output cell-output-stdout">
-<pre><code>0</code></pre>
+<pre><code>2</code></pre>
 </div>
 </div>
 </section>
-<section id="multiply" class="slide level2">
-<h2>Multiply</h2>
+<section id="but-.." class="slide level2">
+<h2>But ..</h2>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># multiply</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a></span>
-<span id="cb14-3"><a href="#cb14-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb14-4"><a href="#cb14-4"></a>popular_number <span class="op">=</span> number <span class="op">*</span> <span class="dv">4</span></span>
-<span id="cb14-5"><a href="#cb14-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#def display_number():</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>    <span class="co"># local variable</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a>    <span class="co">#b = 4</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="co"># used globally</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="co">#print(b)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="8">
-<div class="cell-output cell-output-stdout">
-<pre><code>16</code></pre>
+
 </div>
-</div>
+<ul>
+<li class="fragment"><p>This is because local variables are not recognised globally.</p></li>
+<li class="fragment"><p>Global variables are recognised locally.</p></li>
+</ul>
 </section>
-<section id="divide" class="slide level2">
-<h2>Divide</h2>
+<section id="what-about-this-example" class="slide level2">
+<h2>What about this example ?</h2>
 <div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># divide</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a></span>
-<span id="cb16-3"><a href="#cb16-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a>popular_number <span class="op">=</span> number <span class="op">/</span> <span class="dv">4</span></span>
-<span id="cb16-5"><a href="#cb16-5"></a><span class="bu">print</span>(popular_number)</span>
-<span id="cb16-6"><a href="#cb16-6"></a><span class="bu">print</span>(<span class="bu">type</span>(popular_number))</span>
-<span id="cb16-7"><a href="#cb16-7"></a><span class="bu">print</span>(<span class="bu">type</span>(number))</span>
-<span id="cb16-8"><a href="#cb16-8"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="st">"Uzair"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># function definition</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="kw">def</span> whatever():</span>
+<span id="cb14-3"><a href="#cb14-3"></a>    y <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>    <span class="bu">print</span>(y)</span>
+<span id="cb14-5"><a href="#cb14-5"></a>y <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a><span class="co"># calling function</span></span>
+<span id="cb14-7"><a href="#cb14-7"></a>whatever()</span>
+<span id="cb14-8"><a href="#cb14-8"></a><span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="9">
 <div class="cell-output cell-output-stdout">
-<pre><code>1.0
-&lt;class 'float'&gt;
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</code></pre>
+<pre><code>2
+1</code></pre>
 </div>
 </div>
+<ul>
+<li class="fragment"><p>This is because <code>y</code> is two different variables that (confusingly) happen to have the same name.</p></li>
+<li class="fragment"><p>What happens to the local variable <code>y</code> inside the function doesn’t affect the global variable <code>y</code> outside the function.</p></li>
+<li class="fragment"><p>The global variable retains the value of 1 and local variable retains value 2</p></li>
+</ul>
+</section>
+<section id="lets-get-hands-on" class="slide level2">
+<h2>Let’s get hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/49.html" class="uri">http://www.asmarterwaytolearn.com/python/49.html</a></p>
+</section>
+<section id="dictionaries" class="slide level2">
+<h2>Dictionaries</h2>
+<ul>
+<li class="fragment"><p>Suppose you have a customer id = 29876 with following information</p></li>
+<li class="fragment"><p>first name: Ahmed</p></li>
+<li class="fragment"><p>last name: Aslam</p></li>
+<li class="fragment"><p>city: Karachi</p></li>
+<li class="fragment"><p>country: Pakistan</p></li>
+<li class="fragment"><p>We can create a list to store all the information with it</p></li>
+<li class="fragment"><p>But lists are good with simple series of things.</p></li>
+<li class="fragment"><p>We can use dictionary here.</p></li>
+</ul>
+</section>
+<section id="how-to-code-it" class="slide level2">
+<h2>How to code it</h2>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a>customer_29876 <span class="op">=</span> {</span>
+<span id="cb16-2"><a href="#cb16-2"></a>    <span class="st">"first name"</span> : <span class="st">"Ahmed"</span>,</span>
+<span id="cb16-3"><a href="#cb16-3"></a>    <span class="st">"last name"</span> : <span class="st">"Aslam"</span>,</span>
+<span id="cb16-4"><a href="#cb16-4"></a>    <span class="st">"city"</span> : <span class="st">"Karachi"</span>,</span>
+<span id="cb16-5"><a href="#cb16-5"></a>    <span class="st">"country"</span>: <span class="st">"Pakistan"</span></span>
+<span id="cb16-6"><a href="#cb16-6"></a>}</span>
+<span id="cb16-7"><a href="#cb16-7"></a><span class="bu">print</span>(customer_29876)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="10">
+<div class="cell-output cell-output-stdout">
+<pre><code>{'first name': 'Ahmed', 'last name': 'Aslam', 'city': 'Karachi', 'country': 'Pakistan'}</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><p>In a list, each chunk is one thing. In a dictionary, each chunk is a paired key and value.</p></li>
+<li class="fragment"><p>Here <code>"first name"</code> is called as <code>key</code></p></li>
+<li class="fragment"><p><code>"Ahmed"</code> is called as <code>value</code></p></li>
+</ul>
+</section>
+<section id="lets-get-hands-on-1" class="slide level2">
+<h2>Let’s get Hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/25.html" class="uri">http://www.asmarterwaytolearn.com/python/25.html</a> <a href="http://www.asmarterwaytolearn.com/python/26.html" class="uri">http://www.asmarterwaytolearn.com/python/26.html</a></p>
+</section>
+<section id="how-to-pick-information-out-of-them" class="slide level2">
+<h2>How to pick information out of them</h2>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>fname_of_customer <span class="op">=</span> customer_29876[<span class="st">"first name"</span>]</span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="bu">print</span>(fname_of_customer)</span>
+<span id="cb18-3"><a href="#cb18-3"></a></span>
+<span id="cb18-4"><a href="#cb18-4"></a>city_of_customer <span class="op">=</span> customer_29876[<span class="st">"city"</span>]</span>
+<span id="cb18-5"><a href="#cb18-5"></a><span class="bu">print</span>(city_of_customer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="11">
+<div class="cell-output cell-output-stdout">
+<pre><code>Ahmed
+Karachi</code></pre>
+</div>
+</div>
+</section>
+<section id="versatility-of-keys-and-values" class="slide level2">
+<h2>Versatility of Keys and Values</h2>
+<ul>
+<li class="fragment"><code>Keys</code> can be <code>strings</code> and <code>numbers</code></li>
+<li class="fragment"><code>Values</code> can be <code>strings</code> and <code>numbers</code></li>
+</ul>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a>rankings <span class="op">=</span> {</span>
+<span id="cb20-2"><a href="#cb20-2"></a>    <span class="dv">5</span>: <span class="st">"Finland"</span>, </span>
+<span id="cb20-3"><a href="#cb20-3"></a>    <span class="st">"second"</span>: <span class="st">"Norway"</span>, </span>
+<span id="cb20-4"><a href="#cb20-4"></a>    <span class="dv">3</span>: <span class="st">"Sweden"</span>,</span>
+<span id="cb20-5"><a href="#cb20-5"></a>    <span class="st">"seventh"</span>: <span class="st">"Iceland"</span></span>
+<span id="cb20-6"><a href="#cb20-6"></a>}</span>
+<span id="cb20-7"><a href="#cb20-7"></a><span class="bu">print</span>(rankings)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="12">
+<div class="cell-output cell-output-stdout">
+<pre><code>{5: 'Finland', 'second': 'Norway', 3: 'Sweden', 'seventh': 'Iceland'}</code></pre>
+</div>
+</div>
+</section>
+<section id="adding-items" class="slide level2">
+<h2>Adding items</h2>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a>customer_29876[<span class="st">"address"</span>] <span class="op">=</span> <span class="st">"Street 26, Khe-e-Ittehad"</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="bu">print</span>(customer_29876)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="13">
+<div class="cell-output cell-output-stdout">
+<pre><code>{'first name': 'Ahmed', 'last name': 'Aslam', 'city': 'Karachi', 'country': 'Pakistan', 'address': 'Street 26, Khe-e-Ittehad'}</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><p>In the code above we have dictionary name, the key in square brackets, and the values.</p></li>
+<li class="fragment"><p>Now our dictionary stores customer’s address.</p></li>
+</ul>
+</section>
+<section id="lets-get-hands-on-2" class="slide level2">
+<h2>Let’s get Hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/27.html" class="uri">http://www.asmarterwaytolearn.com/python/27.html</a> <a href="http://www.asmarterwaytolearn.com/python/28.html" class="uri">http://www.asmarterwaytolearn.com/python/28.html</a> <a href="http://www.asmarterwaytolearn.com/python/29.html" class="uri">http://www.asmarterwaytolearn.com/python/29.html</a></p>
 <div class="footer footer-default">
 
 </div>
@@ -633,19 +718,19 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="lecture_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="week-7_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="lecture_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="lecture_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="week-7_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

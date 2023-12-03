@@ -1,0 +1,78 @@
+---
+title: "Assignment 2"
+subtitle: "Deadline: 5th Dec, 2023"
+format: pdf
+---
+
+# Instructions
+
+Before begginning the assignment, please make sure you have following tasks completed:
+
+1. Installation of VS Code.
+2. Installation of Python
+3. Making of Github Profile
+4. Watched the video of using Github by [clicking this link.](https://youtu.be/RGOj5yH7evk?si=4shnioStgRYcpaxE) 
+
+
+
+# Question 1
+
+
+Write a Python function `sum_list` that returns the sum all the numbers in a list.
+
+*Input:* [8, 2, 3, 0, 7]
+
+*Output:* 20 
+
+# Question 2
+
+Write a Python function `test_prime` that takes a number as a parameter and checks whether the number is prime or not.
+
+*Input 1:* 7
+
+*Output 1:* True
+
+*Input 2:* 10
+
+*Output 2:* False
+
+**Note:** A prime number (or a prime) is a natural number greater than 1 and that has no positive divisors other than 1 and itself.
+
+
+## Question 3
+
+Write a Python function `is_even_num` that accepts a list and returns another list with numbers from a given list.
+
+*Input:* [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+*Output:* [2, 4, 6, 8, 10]
+
+## Question 4
+
+Write a Python program that deletes a list of keys from a dictionary
+
+Given : 
+
+```{python}
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"
+}
+
+# Keys to remove
+keys = ["name", "salary"]
+```
+
+Expected output:
+
+```{python}
+#| output: false
+
+{'city': 'New york', 'age': 25}
+```
+
+# Submission
+
+After completing the assignment on Github, please make fill the response form on [this link](https://forms.gle/YrdSGEGyDG1hQxEt5)

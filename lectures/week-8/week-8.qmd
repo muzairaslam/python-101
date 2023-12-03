@@ -1,0 +1,349 @@
+---
+title: "Introduction to Python"
+subtitle: Week 8
+format: revealjs
+incremental: true  
+---
+
+## Some Announcements
+
+- Assignment 2 due on December 5, 11.59 Pm. 
+- Discussion of Project Ideas .
+-  
+
+
+
+## Last Week (Recap)
+
+- Local and Global variables
+- Problem solving with functions.
+- Introduction to dictionaries
+- Adding, deleting infromation in dictionaries
+
+
+## This Week
+
+- Removing items from dictionary
+- looping through values
+- looping through keys
+- looping through key value pairs
+- Creating list of dictionaries
+- Picking information out of a list of dictionaries
+
+
+
+
+## Removing items from dictionary
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876 = {
+    "first name": "David", 
+    "last name": "Elliott", 
+    "address": "4803 Wellesley St.",
+    "city" : "New York",
+    }
+
+del customer_29876["address"]   
+
+print(customer_29876)
+```
+
+
+## Changing items in dictionary
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876["city"] = "Karachi"
+print(customer_29876)
+```
+
+## Let's get hands on!
+
+<http://www.asmarterwaytolearn.com/python/30.html>
+
+
+## Dictionaries: Looping through values
+
+- Recall how you learned to loop through a list. The following code loops through a list named cleanest_cities and displays the name of each city:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+#for a_clean_city in cleanest_cities:
+#    print(a_clean_city)
+```
+
+
+- In dictionary:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+for each_value in customer_29876.values():
+    print(each_value)
+```
+
+- `values` is a function which comes with dictionary object.
+
+
+## Similarly for keys
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876 = {
+"first name": "David",
+"last name": "Elliott",
+"address": "4803 Wellesley St.",
+}
+
+for each_key in customer_29876.keys():
+    print(each_key)
+```
+
+- `keys` is a function which comes with dictionary object.
+
+
+## Looping through key value pairs
+
+- Now I'll show you how to loop through a dictionary finding both keys and values.
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876 = {
+"first name": "David",
+"last name": "Elliott",
+"address": "4803 Wellesley St.",
+}
+
+for each_key, each_value in customer_29876.items():
+    print("The customer's " + each_key + " is " + each_value)
+
+```
+
+
+- This is done using `items` function in the dictionary.
+
+
+## Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/31.html>
+<http://www.asmarterwaytolearn.com/python/32.html>
+<http://www.asmarterwaytolearn.com/python/33.html>
+
+
+## Creating a list of dictionaries
+
+- We have been working with `customer_29876` in the course.
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876 = {
+    "first name": "David",
+    "last name": "Elliott",
+    "address": "4803 Wellesley St.",
+    }
+```
+
+- But one would hope that a company has more than one customer.
+
+- This means you need more than one dictionary.
+
+- You need one for each customer
+
+
+## Creating a list of dictionaries
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# creating a list
+customer_ids = [101, 102]
+
+# creating a list of dictionary
+customers = [
+    {
+        "customer id": 0,
+        "first name":"Uzair",
+        "last name": "Aslam",
+        "address": "Bahadurabad, Karachi"
+    },
+    {
+        "customer id": 1,
+        "first name":"Fatima",
+        "last name": "Wahab",
+        "address": "Phase 4, Karachi"
+    }
+]
+
+print(customers)
+```
+
+
+## Benefits of creating a dictionary in a list
+
+- Each customer does have an identifying number, but the number is no longer part of a dictionary name
+
+- One more thing that's new: the dictionaries don't have names. There is no `customer_29876`
+
+-  Now the customer number is an integer, a value like `101` and `102` that's paired with a key, "customer id."
+
+
+
+## How to pick information out of them ?
+
+- Let's say I want to know the address of a customer whose id is `1`. This is the code that finds it:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# first target the dictionary
+dictionary_to_look_in = customers[0]
+print(dictionary_to_look_in)
+
+# then access information
+customer_id = dictionary_to_look_in["customer id"]
+customer_address = dictionary_to_look_in["address"]
+
+# print using f string since it has integer and strings
+print(f"The customer id: {customer_id}  has  address: {customer_address}")
+```
+
+## Notes
+
+- Our dictionaries have no name.
+
+- How did we get any information out of them when we can't specify a dictionary name?
+
+- We solved by setting customer ids as `customer id : 0` and `customer id : 1`
+
+## Notes (Continued)
+
+- In tha example above `Uzair Aslam's` information is contained in the first dictionary in the list `customers`
+
+- Python assigns this dictionary the index 0.
+
+- Now `Uzair` customer id is up to me, I can give any customer id I want.
+
+- I give him a customer id of 0, the same as the dictionary's index
+
+## Notes (Continued)
+
+- If I want to know which dictionary `Uzair` information is in, I don't
+need a dictionary name. 
+
+- All I need is his `customer id` 0. This tells me where to find his `dictionary` at the 0 index in the `list`.
+
+## Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/34.html>
+<http://www.asmarterwaytolearn.com/python/35.html>
+
+
+## Appending a new dictionary to a list of dictionaries
+
+- We've acquired a new customer. So we need to add a new dictionary to the end of the list.
+
+- How do we add him to the existing dictionary ?
+
+## Code of Appending
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+# first measure the lists length
+new_customer_id = len(customers)
+print(new_customer_id)
+# add the data in a dictionary
+new_cust_dictionary = {
+    "customer id": new_customer_id,
+    "first name": "Talha",
+    "last name": "Kashif",
+    "address": "Nazimabad Block 2, Karachi",
+}
+print(new_cust_dictionary)
+# append this data to the list
+customers.append(new_cust_dictionary) 
+print(customers)
+```
+
+
+## Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/36.html>
+
+
+
+## Dictionary that contains list
+
+- Let's say we want to give our `customer_29876` different discounts. 
+- We want to offer him three discounts: `Standard`, `Volume`, `Loyalty` 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+customer_29876 = {
+    "first name": "David",
+    "last name": "Elliott",
+    "address": "4803 Wellesley St.",
+    "discounts": ["standard", "volume", "loyalty"],
+    }
+
+print(customer_29876)    
+```
+
+- The list is created inside the dictionary defintion.
+
+
+## Accessing the information
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+for i in customer_29876["discounts"]:
+    print (i)
+```
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+
+if "platinium" in customer_29876["discounts"]:
+    discount_amount = .30
+elif "loyalty" in customer_29876["discounts"]:
+    discount_amount = .15
+elif "volume" in customer_29876["discounts"]:
+    discount_amount = .10
+
+print(discount_amount)
+```
+
+
+- Here I wanted to give the maximum discount to customer.
+- This code introduces you to a new way to use the keyword `in`
+
+
+##  Let's get hands On!
+
+<http://www.asmarterwaytolearn.com/python/37.html>
+<http://www.asmarterwaytolearn.com/python/38.html>
+

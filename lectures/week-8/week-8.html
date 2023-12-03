@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="lecture_files/libs/clipboard/clipboard.min.js"></script>
-<script src="lecture_files/libs/quarto-html/tabby.min.js"></script>
-<script src="lecture_files/libs/quarto-html/popper.min.js"></script>
-<script src="lecture_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="lecture_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="lecture_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="lecture_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="lecture_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="week-8_files/libs/clipboard/clipboard.min.js"></script>
+<script src="week-8_files/libs/quarto-html/tabby.min.js"></script>
+<script src="week-8_files/libs/quarto-html/popper.min.js"></script>
+<script src="week-8_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="week-8_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="week-8_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="week-8_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="week-8_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.361">
 
   <title>Introduction to Python</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="lecture_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="lecture_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="week-8_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="week-8_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -94,11 +94,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="lecture_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="lecture_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="lecture_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="lecture_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="lecture_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="week-8_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="week-8_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="week-8_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="week-8_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="week-8_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -390,241 +390,368 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Introduction to Python</h1>
-  <p class="subtitle">Week 1</p>
+  <p class="subtitle">Week 8</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<div>
+<section id="some-announcements" class="slide level2">
+<h2>Some Announcements</h2>
 <ul>
-<li class="fragment">My name is Uzair Aslam</li>
-<li class="fragment">Founder @ <a href="https://statdevs.com/">Stat Devs</a>, a Data Analytics Company.</li>
-<li class="fragment">Currently Data Scientist @ Stat Devs.</li>
-<li class="fragment">Consulted @ Cube Statistica as Junior Data Scientist.</li>
-<li class="fragment">Worked as Data Analyst for Indus Hospital &amp; Health Networks.</li>
-<li class="fragment">BSc Economics &amp; Math, IBA (2022)</li>
-<li class="fragment">Find me on <a href="https://www.linkedin.com/in/uzairdatascientist/">Linked In</a></li>
-<li class="fragment">Find me on <a href="https://github.com/muzairaslam">Github</a></li>
+<li class="fragment">Assignment 2 due on December 5, 11.59 Pm.</li>
+<li class="fragment">Discussion of Project Ideas .</li>
+<li class="fragment"></li>
 </ul>
-</div>
 </section>
-<section id="why-should-we-study-python-now" class="slide level2">
-<h2>Why should we study Python Now ?</h2>
-
-<img data-src="why-python.jpg" width="800" class="r-stretch"></section>
-<section id="because-its-most-in-demand" class="slide level2">
-<h2>Because it’s most in Demand!</h2>
-
-<img data-src="python-popular.jpg" class="r-stretch"></section>
-<section id="python-is-used-in" class="slide level2">
-<h2>Python is used in …</h2>
-
-<img data-src="python-apps.png" class="r-stretch"></section>
-<section id="who-is-using-python-now" class="slide level2">
-<h2>Who is using Python Now ?</h2>
-
-<img data-src="companies-using-python.jpeg" class="r-stretch"></section>
-<section id="how-many-of-you-have-used-python-before" class="slide level2">
-<h2>How many of you have used Python before ?</h2>
-<div>
+<section id="last-week-recap" class="slide level2">
+<h2>Last Week (Recap)</h2>
 <ul>
-<li class="fragment">Never used before</li>
-<li class="fragment">Used once or twice</li>
-<li class="fragment">Studied at University</li>
-<li class="fragment">Daily use</li>
+<li class="fragment">Local and Global variables</li>
+<li class="fragment">Problem solving with functions.</li>
+<li class="fragment">Introduction to dictionaries</li>
+<li class="fragment">Adding, deleting infromation in dictionaries</li>
 </ul>
-</div>
 </section>
-<section id="what-are-we-going-to-learn-in-this-course" class="slide level2">
-<h2>What are we going to learn in this course ?</h2>
-<div>
+<section id="this-week" class="slide level2">
+<h2>This Week</h2>
 <ul>
-<li class="fragment">Python Fundementals (variables, data types, loops, functions)</li>
-<li class="fragment">Basic Data Structures (lists, dictionaries, tuples)</li>
-<li class="fragment">Loading And Reading Data</li>
-<li class="fragment">Data Visualization</li>
-<li class="fragment">Data Science in Python</li>
-<li class="fragment">Much More…</li>
-<li class="fragment">Book for Reference: <a href="https://digtvbg.com/files/books-for-hacking/A%20Smarter%20Way%20to%20Learn%20Python%20-%20Learn%20it%20faster.%20Remember%20it%20longer.%20by%20Mark%20Myers.pdf">A Smarter Way to Learn Python (Mark Myers)</a></li>
+<li class="fragment">Removing items from dictionary</li>
+<li class="fragment">looping through values</li>
+<li class="fragment">looping through keys</li>
+<li class="fragment">looping through key value pairs</li>
+<li class="fragment">Creating list of dictionaries</li>
+<li class="fragment">Picking information out of a list of dictionaries</li>
 </ul>
-</div>
 </section>
-<section id="python-vs-code-installation" class="slide level2">
-<h2>Python &amp; VS Code Installation</h2>
-<p><a href="https://www.python.org/downloads/">Python Download Link</a></p>
-<p><a href="https://code.visualstudio.com/download">VS Code Installation</a></p>
-<p>And <a href="https://github.com/">Github Profile</a> is must for all Students.</p>
-</section>
-<section id="python-language" class="slide level2">
-<h2>Python Language</h2>
-<div>
-<ul>
-<li class="fragment"><p>Python is a popular, 30-year-old general purpose programming language.</p></li>
-<li class="fragment"><p>Created by Guido van Rossum.</p></li>
-<li class="fragment"><p>Compared with some other languages, it’s easy to learn, and it’s relatively easy to read.</p></li>
-<li class="fragment"><p>Python is often used to teach beginners the fundamentals of programming.</p></li>
-</ul>
-</div>
-</section>
-<section id="our-first-lesson-print" class="slide level2">
-<h2>Our First Lesson : print</h2>
-<ul>
-<li><code>print()</code> tells the program to display words or numbers on the screen.</li>
-</ul>
+<section id="removing-items-from-dictionary" class="slide level2">
+<h2>Removing items from dictionary</h2>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>customer_29876 <span class="op">=</span> {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="st">"first name"</span>: <span class="st">"David"</span>, </span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="st">"last name"</span>: <span class="st">"Elliott"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="st">"address"</span>: <span class="st">"4803 Wellesley St."</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="st">"city"</span> : <span class="st">"New York"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    }</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="kw">del</span> customer_29876[<span class="st">"address"</span>]   </span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="bu">print</span>(customer_29876)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="1">
 <div class="cell-output cell-output-stdout">
-<pre><code>Hello World</code></pre>
+<pre><code>{'first name': 'David', 'last name': 'Elliott', 'city': 'New York'}</code></pre>
 </div>
 </div>
-<ul>
-<li><p>print is a keyword that has special meaning for Python.</p></li>
-<li><p>It means, “Display what’s inside the parentheses.”</p></li>
-<li><p>—“Hello, World!”—is called a text string or simply a string</p></li>
-</ul>
 </section>
-<section id="lets-get-hands-on" class="slide level2">
-<h2>Let’s get Hands On!</h2>
-<ul>
-<li><p>Complete the Excercise 1 from the book.</p></li>
-<li><p>https://www.asmarterwaytolearn.com/python/1.html</p></li>
-</ul>
-</section>
-<section id="variables-for-strings" class="slide level2">
-<h2>Variables for Strings</h2>
-<ul>
-<li><p>When we want to create variables in Python we store them in an object.</p></li>
-<li><p>I want to create variable of my name : “Uzair”</p></li>
-<li><p>Then I would <code>print()</code> it.</p></li>
-</ul>
+<section id="changing-items-in-dictionary" class="slide level2">
+<h2>Changing items in dictionary</h2>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>name <span class="op">=</span> <span class="st">"Uzair"</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">print</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>customer_29876[<span class="st">"city"</span>] <span class="op">=</span> <span class="st">"Karachi"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">print</span>(customer_29876)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="2">
 <div class="cell-output cell-output-stdout">
-<pre><code>Uzair</code></pre>
+<pre><code>{'first name': 'David', 'last name': 'Elliott', 'city': 'Karachi'}</code></pre>
 </div>
 </div>
-<ul>
-<li>Always give your variables meaningful names.</li>
-</ul>
 </section>
-<section id="rules-for-defining-variables" class="slide level2">
-<h2>Rules for defining variables</h2>
-<ul>
-<li><p>Each statement is on a separate line</p></li>
-<li><p>Variable names can’t have spaces in them.</p></li>
-<li><p><code>country of origin</code> is not a legal variable name.</p></li>
-<li><p><code>country_of_origin</code> is a legal variable name</p></li>
-</ul>
+<section id="lets-get-hands-on" class="slide level2">
+<h2>Let’s get hands on!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/30.html" class="uri">http://www.asmarterwaytolearn.com/python/30.html</a></p>
 </section>
-<section id="variables-for-numbers" class="slide level2">
-<h2>Variables for Numbers</h2>
+<section id="dictionaries-looping-through-values" class="slide level2">
+<h2>Dictionaries: Looping through values</h2>
 <ul>
-<li>Similar to string, we can assign variable to numbers</li>
+<li class="fragment">Recall how you learned to loop through a list. The following code loops through a list named cleanest_cities and displays the name of each city:</li>
 </ul>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>weight <span class="op">=</span> <span class="dv">150</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="bu">print</span>(weight)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#for a_clean_city in cleanest_cities:</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co">#    print(a_clean_city)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="3">
-<div class="cell-output cell-output-stdout">
-<pre><code>150</code></pre>
-</div>
-</div>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>weight <span class="op">+</span> <span class="dv">25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell fragment" data-execution_count="4">
-<div class="cell-output cell-output-display" data-execution_count="31">
-<pre><code>175</code></pre>
-</div>
-</div>
-</section>
-<section id="string-cannot-be-added-to-number" class="slide level2">
-<h2>String cannot be added to Number</h2>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>original_num <span class="op">=</span> <span class="st">"23"</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="co"># new_num = original_num + 7</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># The above line will give error.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell fragment" data-execution_count="5">
 
 </div>
+<ul>
+<li class="fragment">In dictionary:</li>
+</ul>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="cf">for</span> each_value <span class="kw">in</span> customer_29876.values():</span>
+<span id="cb6-2"><a href="#cb6-2"></a>    <span class="bu">print</span>(each_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="4">
+<div class="cell-output cell-output-stdout">
+<pre><code>David
+Elliott
+Karachi</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><code>values</code> is a function which comes with dictionary object.</li>
+</ul>
 </section>
-<section id="math-expressions" class="slide level2">
-<h2>Math Expressions</h2>
-<p>Familiar operators in math expressions are + (add), - (subtract), * (multiply), and / (divide).</p>
+<section id="similarly-for-keys" class="slide level2">
+<h2>Similarly for keys</h2>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>customer_29876 <span class="op">=</span> {</span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="st">"first name"</span>: <span class="st">"David"</span>,</span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="st">"last name"</span>: <span class="st">"Elliott"</span>,</span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="st">"address"</span>: <span class="st">"4803 Wellesley St."</span>,</span>
+<span id="cb8-5"><a href="#cb8-5"></a>}</span>
+<span id="cb8-6"><a href="#cb8-6"></a></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="cf">for</span> each_key <span class="kw">in</span> customer_29876.keys():</span>
+<span id="cb8-8"><a href="#cb8-8"></a>    <span class="bu">print</span>(each_key)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="5">
+<div class="cell-output cell-output-stdout">
+<pre><code>first name
+last name
+address</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><code>keys</code> is a function which comes with dictionary object.</li>
+</ul>
+</section>
+<section id="looping-through-key-value-pairs" class="slide level2">
+<h2>Looping through key value pairs</h2>
+<ul>
+<li class="fragment">Now I’ll show you how to loop through a dictionary finding both keys and values.</li>
+</ul>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># addition</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a></span>
-<span id="cb10-3"><a href="#cb10-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a>popular_number <span class="op">=</span> number <span class="op">+</span> <span class="dv">4</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>customer_29876 <span class="op">=</span> {</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="st">"first name"</span>: <span class="st">"David"</span>,</span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="st">"last name"</span>: <span class="st">"Elliott"</span>,</span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="st">"address"</span>: <span class="st">"4803 Wellesley St."</span>,</span>
+<span id="cb10-5"><a href="#cb10-5"></a>}</span>
+<span id="cb10-6"><a href="#cb10-6"></a></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="cf">for</span> each_key, each_value <span class="kw">in</span> customer_29876.items():</span>
+<span id="cb10-8"><a href="#cb10-8"></a>    <span class="bu">print</span>(<span class="st">"The customer's "</span> <span class="op">+</span> each_key <span class="op">+</span> <span class="st">" is "</span> <span class="op">+</span> each_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="6">
 <div class="cell-output cell-output-stdout">
-<pre><code>8</code></pre>
+<pre><code>The customer's first name is David
+The customer's last name is Elliott
+The customer's address is 4803 Wellesley St.</code></pre>
 </div>
 </div>
+<ul>
+<li class="fragment">This is done using <code>items</code> function in the dictionary.</li>
+</ul>
 </section>
-<section id="subtraction" class="slide level2">
-<h2>Subtraction</h2>
+<section id="lets-get-hands-on-1" class="slide level2">
+<h2>Let’s get hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/31.html" class="uri">http://www.asmarterwaytolearn.com/python/31.html</a> <a href="http://www.asmarterwaytolearn.com/python/32.html" class="uri">http://www.asmarterwaytolearn.com/python/32.html</a> <a href="http://www.asmarterwaytolearn.com/python/33.html" class="uri">http://www.asmarterwaytolearn.com/python/33.html</a></p>
+</section>
+<section id="creating-a-list-of-dictionaries" class="slide level2">
+<h2>Creating a list of dictionaries</h2>
+<ul>
+<li class="fragment">We have been working with <code>customer_29876</code> in the course.</li>
+</ul>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># subtraction</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a></span>
-<span id="cb12-3"><a href="#cb12-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a>popular_number <span class="op">=</span> number <span class="op">-</span> <span class="dv">4</span></span>
-<span id="cb12-5"><a href="#cb12-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>customer_29876 <span class="op">=</span> {</span>
+<span id="cb12-2"><a href="#cb12-2"></a>    <span class="st">"first name"</span>: <span class="st">"David"</span>,</span>
+<span id="cb12-3"><a href="#cb12-3"></a>    <span class="st">"last name"</span>: <span class="st">"Elliott"</span>,</span>
+<span id="cb12-4"><a href="#cb12-4"></a>    <span class="st">"address"</span>: <span class="st">"4803 Wellesley St."</span>,</span>
+<span id="cb12-5"><a href="#cb12-5"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="7">
-<div class="cell-output cell-output-stdout">
-<pre><code>0</code></pre>
+
 </div>
-</div>
+<ul>
+<li class="fragment"><p>But one would hope that a company has more than one customer.</p></li>
+<li class="fragment"><p>This means you need more than one dictionary.</p></li>
+<li class="fragment"><p>You need one for each customer</p></li>
+</ul>
 </section>
-<section id="multiply" class="slide level2">
-<h2>Multiply</h2>
+<section id="creating-a-list-of-dictionaries-1" class="slide level2">
+<h2>Creating a list of dictionaries</h2>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># multiply</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a></span>
-<span id="cb14-3"><a href="#cb14-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb14-4"><a href="#cb14-4"></a>popular_number <span class="op">=</span> number <span class="op">*</span> <span class="dv">4</span></span>
-<span id="cb14-5"><a href="#cb14-5"></a><span class="bu">print</span>(popular_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># creating a list</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>customer_ids <span class="op">=</span> [<span class="dv">101</span>, <span class="dv">102</span>]</span>
+<span id="cb13-3"><a href="#cb13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="co"># creating a list of dictionary</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a>customers <span class="op">=</span> [</span>
+<span id="cb13-6"><a href="#cb13-6"></a>    {</span>
+<span id="cb13-7"><a href="#cb13-7"></a>        <span class="st">"customer id"</span>: <span class="dv">0</span>,</span>
+<span id="cb13-8"><a href="#cb13-8"></a>        <span class="st">"first name"</span>:<span class="st">"Uzair"</span>,</span>
+<span id="cb13-9"><a href="#cb13-9"></a>        <span class="st">"last name"</span>: <span class="st">"Aslam"</span>,</span>
+<span id="cb13-10"><a href="#cb13-10"></a>        <span class="st">"address"</span>: <span class="st">"Bahadurabad, Karachi"</span></span>
+<span id="cb13-11"><a href="#cb13-11"></a>    },</span>
+<span id="cb13-12"><a href="#cb13-12"></a>    {</span>
+<span id="cb13-13"><a href="#cb13-13"></a>        <span class="st">"customer id"</span>: <span class="dv">1</span>,</span>
+<span id="cb13-14"><a href="#cb13-14"></a>        <span class="st">"first name"</span>:<span class="st">"Fatima"</span>,</span>
+<span id="cb13-15"><a href="#cb13-15"></a>        <span class="st">"last name"</span>: <span class="st">"Wahab"</span>,</span>
+<span id="cb13-16"><a href="#cb13-16"></a>        <span class="st">"address"</span>: <span class="st">"Phase 4, Karachi"</span></span>
+<span id="cb13-17"><a href="#cb13-17"></a>    }</span>
+<span id="cb13-18"><a href="#cb13-18"></a>]</span>
+<span id="cb13-19"><a href="#cb13-19"></a></span>
+<span id="cb13-20"><a href="#cb13-20"></a><span class="bu">print</span>(customers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="8">
 <div class="cell-output cell-output-stdout">
-<pre><code>16</code></pre>
+<pre><code>[{'customer id': 0, 'first name': 'Uzair', 'last name': 'Aslam', 'address': 'Bahadurabad, Karachi'}, {'customer id': 1, 'first name': 'Fatima', 'last name': 'Wahab', 'address': 'Phase 4, Karachi'}]</code></pre>
 </div>
 </div>
 </section>
-<section id="divide" class="slide level2">
-<h2>Divide</h2>
+<section id="benefits-of-creating-a-dictionary-in-a-list" class="slide level2">
+<h2>Benefits of creating a dictionary in a list</h2>
+<ul>
+<li class="fragment"><p>Each customer does have an identifying number, but the number is no longer part of a dictionary name</p></li>
+<li class="fragment"><p>One more thing that’s new: the dictionaries don’t have names. There is no <code>customer_29876</code></p></li>
+<li class="fragment"><p>Now the customer number is an integer, a value like <code>101</code> and <code>102</code> that’s paired with a key, “customer id.”</p></li>
+</ul>
+</section>
+<section id="how-to-pick-information-out-of-them" class="slide level2">
+<h2>How to pick information out of them ?</h2>
+<ul>
+<li class="fragment">Let’s say I want to know the address of a customer whose id is <code>1</code>. This is the code that finds it:</li>
+</ul>
 <div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># divide</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a></span>
-<span id="cb16-3"><a href="#cb16-3"></a>number <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a>popular_number <span class="op">=</span> number <span class="op">/</span> <span class="dv">4</span></span>
-<span id="cb16-5"><a href="#cb16-5"></a><span class="bu">print</span>(popular_number)</span>
-<span id="cb16-6"><a href="#cb16-6"></a><span class="bu">print</span>(<span class="bu">type</span>(popular_number))</span>
-<span id="cb16-7"><a href="#cb16-7"></a><span class="bu">print</span>(<span class="bu">type</span>(number))</span>
-<span id="cb16-8"><a href="#cb16-8"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="st">"Uzair"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a><span class="co"># first target the dictionary</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>dictionary_to_look_in <span class="op">=</span> customers[<span class="dv">0</span>]</span>
+<span id="cb15-3"><a href="#cb15-3"></a><span class="bu">print</span>(dictionary_to_look_in)</span>
+<span id="cb15-4"><a href="#cb15-4"></a></span>
+<span id="cb15-5"><a href="#cb15-5"></a><span class="co"># then access information</span></span>
+<span id="cb15-6"><a href="#cb15-6"></a>customer_id <span class="op">=</span> dictionary_to_look_in[<span class="st">"customer id"</span>]</span>
+<span id="cb15-7"><a href="#cb15-7"></a>customer_address <span class="op">=</span> dictionary_to_look_in[<span class="st">"address"</span>]</span>
+<span id="cb15-8"><a href="#cb15-8"></a></span>
+<span id="cb15-9"><a href="#cb15-9"></a><span class="co"># print using f string since it has integer and strings</span></span>
+<span id="cb15-10"><a href="#cb15-10"></a><span class="bu">print</span>(<span class="ss">f"The customer id: </span><span class="sc">{</span>customer_id<span class="sc">}</span><span class="ss">  has  address: </span><span class="sc">{</span>customer_address<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="9">
 <div class="cell-output cell-output-stdout">
-<pre><code>1.0
-&lt;class 'float'&gt;
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</code></pre>
+<pre><code>{'customer id': 0, 'first name': 'Uzair', 'last name': 'Aslam', 'address': 'Bahadurabad, Karachi'}
+The customer id: 0  has  address: Bahadurabad, Karachi</code></pre>
 </div>
 </div>
+</section>
+<section id="notes" class="slide level2">
+<h2>Notes</h2>
+<ul>
+<li class="fragment"><p>Our dictionaries have no name.</p></li>
+<li class="fragment"><p>How did we get any information out of them when we can’t specify a dictionary name?</p></li>
+<li class="fragment"><p>We solved by setting customer ids as <code>customer id : 0</code> and <code>customer id : 1</code></p></li>
+</ul>
+</section>
+<section id="notes-continued" class="slide level2">
+<h2>Notes (Continued)</h2>
+<ul>
+<li class="fragment"><p>In tha example above <code>Uzair Aslam's</code> information is contained in the first dictionary in the list <code>customers</code></p></li>
+<li class="fragment"><p>Python assigns this dictionary the index 0.</p></li>
+<li class="fragment"><p>Now <code>Uzair</code> customer id is up to me, I can give any customer id I want.</p></li>
+<li class="fragment"><p>I give him a customer id of 0, the same as the dictionary’s index</p></li>
+</ul>
+</section>
+<section id="notes-continued-1" class="slide level2">
+<h2>Notes (Continued)</h2>
+<ul>
+<li class="fragment"><p>If I want to know which dictionary <code>Uzair</code> information is in, I don’t need a dictionary name.</p></li>
+<li class="fragment"><p>All I need is his <code>customer id</code> 0. This tells me where to find his <code>dictionary</code> at the 0 index in the <code>list</code>.</p></li>
+</ul>
+</section>
+<section id="lets-get-hands-on-2" class="slide level2">
+<h2>Let’s get hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/34.html" class="uri">http://www.asmarterwaytolearn.com/python/34.html</a> <a href="http://www.asmarterwaytolearn.com/python/35.html" class="uri">http://www.asmarterwaytolearn.com/python/35.html</a></p>
+</section>
+<section id="appending-a-new-dictionary-to-a-list-of-dictionaries" class="slide level2">
+<h2>Appending a new dictionary to a list of dictionaries</h2>
+<ul>
+<li class="fragment"><p>We’ve acquired a new customer. So we need to add a new dictionary to the end of the list.</p></li>
+<li class="fragment"><p>How do we add him to the existing dictionary ?</p></li>
+</ul>
+</section>
+<section id="code-of-appending" class="slide level2">
+<h2>Code of Appending</h2>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a><span class="co"># first measure the lists length</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>new_customer_id <span class="op">=</span> <span class="bu">len</span>(customers)</span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="bu">print</span>(new_customer_id)</span>
+<span id="cb17-4"><a href="#cb17-4"></a><span class="co"># add the data in a dictionary</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a>new_cust_dictionary <span class="op">=</span> {</span>
+<span id="cb17-6"><a href="#cb17-6"></a>    <span class="st">"customer id"</span>: new_customer_id,</span>
+<span id="cb17-7"><a href="#cb17-7"></a>    <span class="st">"first name"</span>: <span class="st">"Talha"</span>,</span>
+<span id="cb17-8"><a href="#cb17-8"></a>    <span class="st">"last name"</span>: <span class="st">"Kashif"</span>,</span>
+<span id="cb17-9"><a href="#cb17-9"></a>    <span class="st">"address"</span>: <span class="st">"Nazimabad Block 2, Karachi"</span>,</span>
+<span id="cb17-10"><a href="#cb17-10"></a>}</span>
+<span id="cb17-11"><a href="#cb17-11"></a><span class="bu">print</span>(new_cust_dictionary)</span>
+<span id="cb17-12"><a href="#cb17-12"></a><span class="co"># append this data to the list</span></span>
+<span id="cb17-13"><a href="#cb17-13"></a>customers.append(new_cust_dictionary) </span>
+<span id="cb17-14"><a href="#cb17-14"></a><span class="bu">print</span>(customers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="10">
+<div class="cell-output cell-output-stdout">
+<pre><code>2
+{'customer id': 2, 'first name': 'Talha', 'last name': 'Kashif', 'address': 'Nazimabad Block 2, Karachi'}
+[{'customer id': 0, 'first name': 'Uzair', 'last name': 'Aslam', 'address': 'Bahadurabad, Karachi'}, {'customer id': 1, 'first name': 'Fatima', 'last name': 'Wahab', 'address': 'Phase 4, Karachi'}, {'customer id': 2, 'first name': 'Talha', 'last name': 'Kashif', 'address': 'Nazimabad Block 2, Karachi'}]</code></pre>
+</div>
+</div>
+</section>
+<section id="lets-get-hands-on-3" class="slide level2">
+<h2>Let’s get hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/36.html" class="uri">http://www.asmarterwaytolearn.com/python/36.html</a></p>
+</section>
+<section id="dictionary-that-contains-list" class="slide level2">
+<h2>Dictionary that contains list</h2>
+<ul>
+<li class="fragment">Let’s say we want to give our <code>customer_29876</code> different discounts.</li>
+<li class="fragment">We want to offer him three discounts: <code>Standard</code>, <code>Volume</code>, <code>Loyalty</code></li>
+</ul>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>customer_29876 <span class="op">=</span> {</span>
+<span id="cb19-2"><a href="#cb19-2"></a>    <span class="st">"first name"</span>: <span class="st">"David"</span>,</span>
+<span id="cb19-3"><a href="#cb19-3"></a>    <span class="st">"last name"</span>: <span class="st">"Elliott"</span>,</span>
+<span id="cb19-4"><a href="#cb19-4"></a>    <span class="st">"address"</span>: <span class="st">"4803 Wellesley St."</span>,</span>
+<span id="cb19-5"><a href="#cb19-5"></a>    <span class="st">"discounts"</span>: [<span class="st">"standard"</span>, <span class="st">"volume"</span>, <span class="st">"loyalty"</span>],</span>
+<span id="cb19-6"><a href="#cb19-6"></a>    }</span>
+<span id="cb19-7"><a href="#cb19-7"></a></span>
+<span id="cb19-8"><a href="#cb19-8"></a><span class="bu">print</span>(customer_29876)    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="11">
+<div class="cell-output cell-output-stdout">
+<pre><code>{'first name': 'David', 'last name': 'Elliott', 'address': '4803 Wellesley St.', 'discounts': ['standard', 'volume', 'loyalty']}</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment">The list is created inside the dictionary defintion.</li>
+</ul>
+</section>
+<section id="accessing-the-information" class="slide level2">
+<h2>Accessing the information</h2>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a><span class="cf">for</span> i <span class="kw">in</span> customer_29876[<span class="st">"discounts"</span>]:</span>
+<span id="cb21-2"><a href="#cb21-2"></a>    <span class="bu">print</span> (i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="12">
+<div class="cell-output cell-output-stdout">
+<pre><code>standard
+volume
+loyalty</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a><span class="cf">if</span> <span class="st">"platinium"</span> <span class="kw">in</span> customer_29876[<span class="st">"discounts"</span>]:</span>
+<span id="cb23-2"><a href="#cb23-2"></a>    discount_amount <span class="op">=</span> <span class="fl">.30</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a><span class="cf">elif</span> <span class="st">"loyalty"</span> <span class="kw">in</span> customer_29876[<span class="st">"discounts"</span>]:</span>
+<span id="cb23-4"><a href="#cb23-4"></a>    discount_amount <span class="op">=</span> <span class="fl">.15</span></span>
+<span id="cb23-5"><a href="#cb23-5"></a><span class="cf">elif</span> <span class="st">"volume"</span> <span class="kw">in</span> customer_29876[<span class="st">"discounts"</span>]:</span>
+<span id="cb23-6"><a href="#cb23-6"></a>    discount_amount <span class="op">=</span> <span class="fl">.10</span></span>
+<span id="cb23-7"><a href="#cb23-7"></a></span>
+<span id="cb23-8"><a href="#cb23-8"></a><span class="bu">print</span>(discount_amount)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="13">
+<div class="cell-output cell-output-stdout">
+<pre><code>0.15</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment">Here I wanted to give the maximum discount to customer.</li>
+<li class="fragment">This code introduces you to a new way to use the keyword <code>in</code></li>
+</ul>
+</section>
+<section id="lets-get-hands-on-4" class="slide level2">
+<h2>Let’s get hands On!</h2>
+<p><a href="http://www.asmarterwaytolearn.com/python/37.html" class="uri">http://www.asmarterwaytolearn.com/python/37.html</a> <a href="http://www.asmarterwaytolearn.com/python/38.html" class="uri">http://www.asmarterwaytolearn.com/python/38.html</a></p>
 <div class="footer footer-default">
 
 </div>
@@ -633,19 +760,19 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="lecture_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="week-8_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="lecture_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="lecture_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="lecture_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="week-8_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

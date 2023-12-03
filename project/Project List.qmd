@@ -1,0 +1,100 @@
+---
+title: "Final Course Project"
+subtitle: "Upcode Batch-1"
+format: pdf
+---
+
+As part of your assessment, a final project is required, constituting 30% of your overall grade. The presentation for your project is scheduled for **December 10, 2023**.
+
+Below are some project ideas to assist you in selecting a suitable topic for your final project:
+
+# Project Ideas
+
+## Idea 1 
+
+Temperature Converter
+
+### Description
+
+Create a program that converts temperatures between Celsius and Fahrenheit. Include a basic user interface where users can input a temperature in one unit and get the converted result.
+
+### Skills Developed
+
+User input handling, basic airthmetic operations, data type conversion, error handling
+
+## Idea 2
+
+To-Do List Application
+
+### Description
+
+Develop a to-do list application that allows users to add, edit, and delete tasks. Include features like marking tasks as complete and organizing tasks by priority.
+
+### Skills Developed
+
+Data structures, user input handling, conditional statements, functions
+
+## Idea 3
+
+Basic Web Scraper
+
+### Description
+
+Build a simple web scraper using Python to extract information from a website. This could involve retrieving data from news articles, product pages, or any other structured web content. Utilize libraries like BeautifulSoup or Scrapy to navigate and extract data from HTML pages.
+
+### Skills Developed
+
+Web scraping techniques, HTML parsing, and handling HTTP requests.
+
+## Idea 4
+
+Development of Graphical User Interface using Tkinter
+
+### Description
+
+Create a desktop application with a graphical user interface (GUI) using Tkinter, a standard GUI toolkit for Python. The project could be a simple application like a to-do list, calculator, or a text editor. Focus on designing an intuitive and user-friendly interface.
+
+### Skills Developed
+
+GUI design principles, event handling, and working with Tkinter widgets.
+
+## Idea 5
+
+Simple Calculator:
+
+### Description
+
+Create a basic calculator that can perform operations like addition, subtraction, multiplication, and division. Add a simple graphical user interface (GUI) to enhance user 
+interaction.
+
+### Skills Developed
+
+User input handling, basic arithmetic operations, conditional statements, data type conversion
+
+## Other Project Ideas
+
+These project ideas cover a range of Python programming skills and allow for creativity and customization based on individual interests and goals. These ideas are provided as a starting point, and you are welcome to choose one from the list or propose an alternative problem statement that aligns with your interests and the course objectives. Please keep in mind that you are not permitted to use Chat GPT for your project, but you may seek assistance from other online resources.
+
+# Evaluation Criteria
+
+You will be assessed based on the following components:
+
+1. Project Code: The effectiveness and efficiency of your code in addressing the chosen problem.
+
+2. Project Idea: The relevance, creativity, and innovation demonstrated in your chosen project.
+
+3. Presentation: Your ability to articulate and communicate your project, including its objectives, code development, and outcomes.
+
+# Important Notes
+
+1. Deadline for Project Idea Submission: The last date to submit your chosen project idea is Thursday, November 30, 2023.
+
+2. Use of Online Resources: While Chat GPT is not allowed for your project, you are encouraged to leverage other online resources to enhance your understanding and implementation.
+
+3. Personal Discussion: Feel free to schedule a personal discussion with me to discuss and refine your project idea. I am here to provide guidance and support.
+
+4. Python Packages: You are welcomed to use Python packages to build your project. A package is a container that contains various functions to perform specific tasks.
+
+5. Group Collaboration: You have the option to work collaboratively in groups of up to two students. Ensure effective communication and equitable contribution within your group.
+
+
