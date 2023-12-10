@@ -213,7 +213,7 @@ print(customers)
 #| output-location: fragment
 
 # first target the dictionary
-dictionary_to_look_in = customers[0]
+dictionary_to_look_in = customers[1]
 print(dictionary_to_look_in)
 
 # then access information
@@ -346,4 +346,3 @@ print(discount_amount)
 
 <http://www.asmarterwaytolearn.com/python/37.html>
 <http://www.asmarterwaytolearn.com/python/38.html>
-

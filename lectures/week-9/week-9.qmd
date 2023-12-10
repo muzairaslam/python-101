@@ -1,0 +1,115 @@
+---
+title: "Introduction to Python"
+subtitle: Week 9
+format: revealjs
+incremental: true  
+---
+
+## Some Announcements
+
+- Assignment 2 Problems Discussion
+- Discussion of Project Ideas
+
+
+## Last Week
+
+- Removing items from dictionary
+- looping through values
+- looping through keys
+- looping through key value pairs
+- Creating list of dictionaries
+- Picking information out of a list of dictionaries
+
+## This Week
+
+- Working with Data files
+- Reading, Writing and Appending data
+- Creating directory using `os` package
+- Exception Handling
+- Working in Pandas using csv and excel files
+
+
+
+
+## Writing data in files
+
+- In all the coding so far in this book, none of the data has been preserved. 
+
+- We created variables, lists, dictionaries, that contained information, but as soon as the computer was turned off, all of it disappeared.
+
+- Now we will learn how to store the information in the file.
+
+
+## Opening and Storing data file
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+greetings = "Hello, world!"
+with open("example_file.txt", "w") as f:
+    f.write(greetings)
+```
+
+- `as` is a keyword meaning that you're assigning a file handle to the file.
+- `with` tells Python to close the file after you write to it
+
+## Retrieving data
+
+- We have created a text file, `example_file.txt`. Its entire contents: the string "Hello world!""
+
+- How do we retrieve it? 
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+with open("example_file.txt", "r") as f:
+    text_file_content = f.read()
+print(text_file_content)
+```
+
+- We specify `"r"` for "read" instead of `"w"` for "write."
+
+## Appending data
+
+- I want to write more data in the file.
+- The text I want to append is `"Have a nice day!"`
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+with open("example_file.txt", "a") as f:
+    f.write("\nHave a nice day!")
+```
+
+- `\n` is the new-line character
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+with open("example_file.txt") as f:
+    message = f.read()
+    print(message)
+```
+
+## Python File Handling Methods
+
+![](python-file-methods.png)
+
+## Online Resources
+
+<https://pythonistaplanet.com/python-file-io-exercises/>
+
+
+## Let's get hands On!
+
+- <http://www.asmarterwaytolearn.com/python/62.html>
+- <http://www.asmarterwaytolearn.com/python/63.html>
+- <http://www.asmarterwaytolearn.com/python/64.html>
+- <http://www.asmarterwaytolearn.com/python/65.html>
+
+
+
